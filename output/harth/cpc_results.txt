@@ -1,0 +1,8 @@
+Baseline: cpc
+Seeds: [42]
+Average DBI: 2.91
+Average CHI: 2881.86
+Average SC: 0.06
+Standard Deviation DBI: 0.00
+Standard Deviation CHI: 0.00
+Standard Deviation SC: 0.00

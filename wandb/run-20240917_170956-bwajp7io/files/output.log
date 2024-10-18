@@ -1,0 +1,23 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+
+
+
+
+
+ 10%|███████████████████████████████████████████████▏                                                                                                                                                                                                                                                                                                                                                                                                                                        | 5/50 [01:16<12:55, 17.24s/it]
+
+
+
+
+ 18%|████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                                                                                                                                                                                                                                                                                                   | 9/50 [02:06<09:20, 13.68s/it]/Users/shamba/anaconda3/lib/python3.11/site-packages/sklearn/base.py:1151: ConvergenceWarning: Number of distinct clusters (8) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+DB Index: 0.00, CH Index: 1.00, SLH Index: 1.00
+
+ 22%|███████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                                                                                                                                                                                                                                                               | 11/50 [02:52<10:12, 15.71s/it]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/reconstruction.py", line 416, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/reconstruction.py", line 186, in main
+    mask = torch.rand(time_series.shape) < mask_fraction
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

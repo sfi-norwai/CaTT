@@ -1,0 +1,42 @@
+{
+    "os": "macOS-14.4.1-arm64-arm-64bit",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-09-03T21:06:35.548988",
+    "startedAt": "2024-09-03T21:06:34.430577",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-p",
+        "configs/harthconfig.yml",
+        "-d",
+        "data/harth"
+    ],
+    "state": "running",
+    "program": "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cpc.py",
+    "codePathLocal": "baselines/cpc.py",
+    "codePath": "baselines/cpc.py",
+    "git": {
+        "remote": "https://github.com/ShambAI/Multi-Step-Contrastive-Learning.git",
+        "commit": "fa17c267f1355c428e88b320ecc47961ce0d7d95"
+    },
+    "email": null,
+    "root": "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL",
+    "host": "dhcp-10-24-85-148.wlan.ntnu.no",
+    "username": "shamba",
+    "executable": "/Users/shamba/anaconda3/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 147.9413604736328
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M2 Pro",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

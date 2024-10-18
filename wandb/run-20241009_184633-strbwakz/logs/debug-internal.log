@@ -1,0 +1,207 @@
+2024-10-09 18:46:33,904 INFO    StreamThr :24316 [internal.py:wandb_internal():85] W&B internal server running at pid: 24316, started at: 2024-10-09 18:46:33.903855
+2024-10-09 18:46:33,904 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: status
+2024-10-09 18:46:33,906 INFO    WriterThread:24316 [datastore.py:open_for_write():87] open: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/run-strbwakz.wandb
+2024-10-09 18:46:33,907 DEBUG   SenderThread:24316 [sender.py:send():391] send: header
+2024-10-09 18:46:33,923 DEBUG   SenderThread:24316 [sender.py:send():391] send: run
+2024-10-09 18:46:33,924 INFO    SenderThread:24316 [sender.py:_setup_resume():761] checking resume status for None/Dynamic_CLsleepeeg419/strbwakz
+2024-10-09 18:46:34,625 INFO    SenderThread:24316 [dir_watcher.py:__init__():211] watching files in: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files
+2024-10-09 18:46:34,625 INFO    SenderThread:24316 [sender.py:_start_run_threads():1200] run started: strbwakz with start time 1728492393.904329
+2024-10-09 18:46:34,639 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: run_start
+2024-10-09 18:46:34,648 DEBUG   HandlerThread:24316 [system_info.py:__init__():26] System info init
+2024-10-09 18:46:34,648 DEBUG   HandlerThread:24316 [system_info.py:__init__():41] System info init done
+2024-10-09 18:46:34,648 INFO    HandlerThread:24316 [system_monitor.py:start():194] Starting system monitor
+2024-10-09 18:46:34,648 INFO    SystemMonitor:24316 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-10-09 18:46:34,648 INFO    HandlerThread:24316 [system_monitor.py:probe():214] Collecting system info
+2024-10-09 18:46:34,651 INFO    SystemMonitor:24316 [interfaces.py:start():188] Started cpu monitoring
+2024-10-09 18:46:34,654 INFO    SystemMonitor:24316 [interfaces.py:start():188] Started disk monitoring
+2024-10-09 18:46:34,654 INFO    SystemMonitor:24316 [interfaces.py:start():188] Started gpuapple monitoring
+2024-10-09 18:46:34,656 INFO    SystemMonitor:24316 [interfaces.py:start():188] Started memory monitoring
+2024-10-09 18:46:34,657 INFO    SystemMonitor:24316 [interfaces.py:start():188] Started network monitoring
+2024-10-09 18:46:35,007 DEBUG   HandlerThread:24316 [system_info.py:probe():152] Probing system
+2024-10-09 18:46:35,012 DEBUG   HandlerThread:24316 [system_info.py:_probe_git():137] Probing git
+2024-10-09 18:46:35,028 DEBUG   HandlerThread:24316 [system_info.py:_probe_git():145] Probing git done
+2024-10-09 18:46:35,028 DEBUG   HandlerThread:24316 [system_info.py:probe():200] Probing system done
+2024-10-09 18:46:35,028 DEBUG   HandlerThread:24316 [system_monitor.py:probe():223] {'os': 'macOS-14.4.1-arm64-arm-64bit', 'python': '3.11.5', 'heartbeatAt': '2024-10-09T16:46:35.008038', 'startedAt': '2024-10-09T16:46:33.899571', 'docker': None, 'cuda': None, 'args': ('-p', 'configs/sleepconfig.yml', '-d', 'data/sleepeeg', '-s', '419'), 'state': 'running', 'program': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cost.py', 'codePathLocal': 'baselines/cost.py', 'codePath': 'baselines/cost.py', 'git': {'remote': 'https://github.com/ShambAI/Multi-Step-Contrastive-Learning.git', 'commit': '49f7f33a8b1dad0caad5b88fe39a8b24f97cc985'}, 'email': None, 'root': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL', 'host': 'dhcp-10-24-85-136.wlan.ntnu.no', 'username': 'shamba', 'executable': '/Users/shamba/anaconda3/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 154.76413345336914}}, 'gpuapple': {'type': 'Apple M2 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 16.0}}
+2024-10-09 18:46:35,028 INFO    HandlerThread:24316 [system_monitor.py:probe():224] Finished collecting system info
+2024-10-09 18:46:35,028 INFO    HandlerThread:24316 [system_monitor.py:probe():227] Publishing system info
+2024-10-09 18:46:35,028 DEBUG   HandlerThread:24316 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-10-09 18:46:35,631 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/conda-environment.yaml
+2024-10-09 18:46:38,012 DEBUG   HandlerThread:24316 [system_info.py:_save_conda():224] Saving conda packages done
+2024-10-09 18:46:38,013 INFO    HandlerThread:24316 [system_monitor.py:probe():229] Finished publishing system info
+2024-10-09 18:46:38,020 DEBUG   SenderThread:24316 [sender.py:send():391] send: files
+2024-10-09 18:46:38,020 INFO    SenderThread:24316 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-10-09 18:46:38,174 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: python_packages
+2024-10-09 18:46:38,174 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: stop_status
+2024-10-09 18:46:38,174 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-09 18:46:38,174 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: python_packages
+2024-10-09 18:46:38,174 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: stop_status
+2024-10-09 18:46:38,386 DEBUG   SenderThread:24316 [sender.py:send():391] send: telemetry
+2024-10-09 18:46:38,386 DEBUG   SenderThread:24316 [sender.py:send():391] send: telemetry
+2024-10-09 18:46:38,386 DEBUG   SenderThread:24316 [sender.py:send():391] send: metric
+2024-10-09 18:46:38,387 DEBUG   SenderThread:24316 [sender.py:send():391] send: telemetry
+2024-10-09 18:46:38,388 DEBUG   SenderThread:24316 [sender.py:send():391] send: metric
+2024-10-09 18:46:38,388 WARNING SenderThread:24316 [sender.py:send_metric():1417] Seen metric with glob (shouldn't happen)
+2024-10-09 18:46:38,388 DEBUG   SenderThread:24316 [sender.py:send():391] send: telemetry
+2024-10-09 18:46:38,388 DEBUG   SenderThread:24316 [sender.py:send():391] send: telemetry
+2024-10-09 18:46:38,388 DEBUG   SenderThread:24316 [sender.py:send():391] send: telemetry
+2024-10-09 18:46:38,388 DEBUG   SenderThread:24316 [sender.py:send():391] send: config
+2024-10-09 18:46:38,388 DEBUG   SenderThread:24316 [sender.py:send():391] send: config
+2024-10-09 18:46:38,389 DEBUG   SenderThread:24316 [sender.py:send():391] send: config
+2024-10-09 18:46:38,389 DEBUG   SenderThread:24316 [sender.py:send():391] send: telemetry
+2024-10-09 18:46:38,389 DEBUG   SenderThread:24316 [sender.py:send():391] send: run
+2024-10-09 18:46:38,582 INFO    SenderThread:24316 [sender.py:send_run():1047] updated run: strbwakz
+2024-10-09 18:46:38,582 DEBUG   SenderThread:24316 [sender.py:send():391] send: telemetry
+2024-10-09 18:46:38,708 INFO    wandb-upload_0:24316 [upload_job.py:push():130] Uploaded file /var/folders/8_/bs02pqyd2h75v495kym36z2c0000gn/T/tmpp_a_870bwandb/us5f7lg7-wandb-metadata.json
+2024-10-09 18:46:38,709 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/config.yaml
+2024-10-09 18:46:38,709 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/conda-environment.yaml
+2024-10-09 18:46:38,709 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/requirements.txt
+2024-10-09 18:46:38,709 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/wandb-metadata.json
+2024-10-09 18:46:38,709 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/output.log
+2024-10-09 18:46:39,585 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: status_report
+2024-10-09 18:46:40,682 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/output.log
+2024-10-09 18:46:42,149 DEBUG   SenderThread:24316 [sender.py:send():391] send: exit
+2024-10-09 18:46:42,149 INFO    SenderThread:24316 [sender.py:send_exit():598] handling exit code: 1
+2024-10-09 18:46:42,149 INFO    SenderThread:24316 [sender.py:send_exit():600] handling runtime: 7
+2024-10-09 18:46:42,149 INFO    SenderThread:24316 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-10-09 18:46:42,149 INFO    SenderThread:24316 [sender.py:send_exit():606] send defer
+2024-10-09 18:46:42,150 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:42,150 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 0
+2024-10-09 18:46:42,150 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:42,150 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-10-09 18:46:42,150 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 1
+2024-10-09 18:46:42,150 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:42,150 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 1
+2024-10-09 18:46:42,150 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:42,150 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-10-09 18:46:42,150 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 2
+2024-10-09 18:46:42,150 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:42,150 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 2
+2024-10-09 18:46:42,150 INFO    HandlerThread:24316 [system_monitor.py:finish():203] Stopping system monitor
+2024-10-09 18:46:42,150 DEBUG   SystemMonitor:24316 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-10-09 18:46:42,150 DEBUG   SystemMonitor:24316 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-10-09 18:46:42,150 INFO    HandlerThread:24316 [interfaces.py:finish():200] Joined cpu monitor
+2024-10-09 18:46:42,150 DEBUG   SystemMonitor:24316 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-10-09 18:46:42,150 INFO    HandlerThread:24316 [interfaces.py:finish():200] Joined disk monitor
+2024-10-09 18:46:42,246 INFO    HandlerThread:24316 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-10-09 18:46:42,246 INFO    HandlerThread:24316 [interfaces.py:finish():200] Joined memory monitor
+2024-10-09 18:46:42,246 INFO    HandlerThread:24316 [interfaces.py:finish():200] Joined network monitor
+2024-10-09 18:46:42,246 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:42,246 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-10-09 18:46:42,246 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 3
+2024-10-09 18:46:42,246 DEBUG   SenderThread:24316 [sender.py:send():391] send: telemetry
+2024-10-09 18:46:42,246 DEBUG   SenderThread:24316 [sender.py:send():391] send: stats
+2024-10-09 18:46:42,246 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:42,246 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 3
+2024-10-09 18:46:42,247 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:42,247 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-10-09 18:46:42,247 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 4
+2024-10-09 18:46:42,247 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:42,247 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 4
+2024-10-09 18:46:42,247 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:42,247 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-10-09 18:46:42,247 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 5
+2024-10-09 18:46:42,247 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:42,247 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 5
+2024-10-09 18:46:42,247 DEBUG   SenderThread:24316 [sender.py:send():391] send: summary
+2024-10-09 18:46:42,247 INFO    SenderThread:24316 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-10-09 18:46:42,247 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:42,247 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-10-09 18:46:42,247 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 6
+2024-10-09 18:46:42,247 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:42,247 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 6
+2024-10-09 18:46:42,247 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:42,247 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-10-09 18:46:42,249 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: status_report
+2024-10-09 18:46:42,477 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 7
+2024-10-09 18:46:42,477 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:42,477 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 7
+2024-10-09 18:46:42,478 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:42,478 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-10-09 18:46:42,692 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/config.yaml
+2024-10-09 18:46:42,693 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/wandb-summary.json
+2024-10-09 18:46:43,154 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-09 18:46:43,698 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/output.log
+2024-10-09 18:46:44,703 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/output.log
+2024-10-09 18:46:45,503 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 8
+2024-10-09 18:46:45,504 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: poll_exit
+2024-10-09 18:46:45,504 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:45,505 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 8
+2024-10-09 18:46:45,505 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:45,505 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-10-09 18:46:45,505 INFO    SenderThread:24316 [job_builder.py:build():443] Attempting to build job artifact
+2024-10-09 18:46:45,507 INFO    SenderThread:24316 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-10-09 18:46:45,540 INFO    SenderThread:24316 [job_builder.py:build():548] adding wandb-job metadata file
+2024-10-09 18:46:45,542 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 9
+2024-10-09 18:46:45,542 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:45,542 DEBUG   SenderThread:24316 [sender.py:send():391] send: artifact
+2024-10-09 18:46:45,542 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 9
+2024-10-09 18:46:45,705 INFO    Thread-13 :24316 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/output.log
+2024-10-09 18:46:46,159 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-09 18:46:46,602 INFO    SenderThread:24316 [sender.py:send_artifact():1549] sent artifact job-https___github.com_ShambAI_Multi-Step-Contrastive-Learning.git_baselines_cost.py - {'id': 'QXJ0aWZhY3Q6MTI2NjQzNTc1NA==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ2NzU2Mjk2Mw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTI2NjQzNTc1NA==', 'versionIndex': 0}}}
+2024-10-09 18:46:46,603 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:46,603 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-10-09 18:46:46,603 INFO    SenderThread:24316 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-10-09 18:46:46,712 INFO    SenderThread:24316 [dir_watcher.py:finish():388] scan: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files
+2024-10-09 18:46:46,712 INFO    SenderThread:24316 [dir_watcher.py:finish():402] scan save: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/requirements.txt requirements.txt
+2024-10-09 18:46:46,712 INFO    SenderThread:24316 [dir_watcher.py:finish():402] scan save: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/output.log output.log
+2024-10-09 18:46:46,713 INFO    SenderThread:24316 [dir_watcher.py:finish():402] scan save: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/config.yaml config.yaml
+2024-10-09 18:46:46,717 INFO    SenderThread:24316 [dir_watcher.py:finish():402] scan save: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/wandb-summary.json wandb-summary.json
+2024-10-09 18:46:46,720 INFO    SenderThread:24316 [dir_watcher.py:finish():402] scan save: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/conda-environment.yaml conda-environment.yaml
+2024-10-09 18:46:46,722 INFO    SenderThread:24316 [dir_watcher.py:finish():402] scan save: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/wandb-metadata.json wandb-metadata.json
+2024-10-09 18:46:46,722 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 10
+2024-10-09 18:46:46,723 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: poll_exit
+2024-10-09 18:46:46,724 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:46,724 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 10
+2024-10-09 18:46:46,725 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:46,725 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-10-09 18:46:46,725 INFO    SenderThread:24316 [file_pusher.py:finish():169] shutting down file pusher
+2024-10-09 18:46:47,127 INFO    wandb-upload_1:24316 [upload_job.py:push():130] Uploaded file /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/output.log
+2024-10-09 18:46:47,162 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-09 18:46:47,162 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: poll_exit
+2024-10-09 18:46:47,199 INFO    wandb-upload_0:24316 [upload_job.py:push():130] Uploaded file /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/requirements.txt
+2024-10-09 18:46:47,241 INFO    wandb-upload_3:24316 [upload_job.py:push():130] Uploaded file /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/wandb-summary.json
+2024-10-09 18:46:47,247 INFO    wandb-upload_2:24316 [upload_job.py:push():130] Uploaded file /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/config.yaml
+2024-10-09 18:46:47,288 INFO    wandb-upload_4:24316 [upload_job.py:push():130] Uploaded file /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/files/conda-environment.yaml
+2024-10-09 18:46:47,494 INFO    Thread-12 (_thread_body):24316 [sender.py:transition_state():626] send defer: 11
+2024-10-09 18:46:47,495 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:47,495 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 11
+2024-10-09 18:46:47,496 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:47,496 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-10-09 18:46:47,496 INFO    SenderThread:24316 [file_pusher.py:join():175] waiting for file pusher
+2024-10-09 18:46:47,497 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 12
+2024-10-09 18:46:47,497 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:47,497 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 12
+2024-10-09 18:46:47,497 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:47,497 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-10-09 18:46:47,497 INFO    SenderThread:24316 [file_stream.py:finish():601] file stream finish called
+2024-10-09 18:46:47,679 INFO    SenderThread:24316 [file_stream.py:finish():605] file stream finish is done
+2024-10-09 18:46:47,679 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 13
+2024-10-09 18:46:47,680 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:47,680 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 13
+2024-10-09 18:46:47,680 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:47,681 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-10-09 18:46:47,681 INFO    SenderThread:24316 [sender.py:transition_state():626] send defer: 14
+2024-10-09 18:46:47,681 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: defer
+2024-10-09 18:46:47,682 DEBUG   SenderThread:24316 [sender.py:send():391] send: final
+2024-10-09 18:46:47,682 INFO    HandlerThread:24316 [handler.py:handle_request_defer():184] handle defer: 14
+2024-10-09 18:46:47,682 DEBUG   SenderThread:24316 [sender.py:send():391] send: footer
+2024-10-09 18:46:47,682 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: defer
+2024-10-09 18:46:47,682 INFO    SenderThread:24316 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-10-09 18:46:47,683 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-09 18:46:47,683 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: poll_exit
+2024-10-09 18:46:47,683 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: server_info
+2024-10-09 18:46:47,684 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: poll_exit
+2024-10-09 18:46:47,684 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: get_summary
+2024-10-09 18:46:47,685 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: server_info
+2024-10-09 18:46:47,685 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: sampled_history
+2024-10-09 18:46:47,686 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: internal_messages
+2024-10-09 18:46:47,838 DEBUG   SenderThread:24316 [sender.py:send_request():418] send_request: poll_exit
+2024-10-09 18:46:47,840 INFO    MainThread:24316 [wandb_run.py:_footer_history_summary_info():4078] rendering history
+2024-10-09 18:46:47,840 INFO    MainThread:24316 [wandb_run.py:_footer_history_summary_info():4110] rendering summary
+2024-10-09 18:46:47,840 INFO    MainThread:24316 [wandb_run.py:_footer_sync_info():4037] logging synced files
+2024-10-09 18:46:47,841 DEBUG   HandlerThread:24316 [handler.py:handle_request():158] handle_request: shutdown
+2024-10-09 18:46:47,842 INFO    HandlerThread:24316 [handler.py:finish():884] shutting down handler
+2024-10-09 18:46:48,690 INFO    WriterThread:24316 [datastore.py:close():296] close: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20241009_184633-strbwakz/run-strbwakz.wandb
+2024-10-09 18:46:48,843 INFO    SenderThread:24316 [sender.py:finish():1631] shutting down sender
+2024-10-09 18:46:48,843 INFO    SenderThread:24316 [file_pusher.py:finish():169] shutting down file pusher
+2024-10-09 18:46:48,843 INFO    SenderThread:24316 [file_pusher.py:join():175] waiting for file pusher

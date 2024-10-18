@@ -1,0 +1,15 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+  0%|                                                                                                                             | 0/499 [00:22<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/ts2vec.py", line 370, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/ts2vec.py", line 198, in main
+    train_loss = hierarchical_contrastive_loss(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/src/losses/contrastive.py", line 29, in hierarchical_contrastive_loss
+    loss += alpha * instance_contrastive_loss(z1, z2)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/src/losses/contrastive.py", line 46, in instance_contrastive_loss
+    z = torch.cat([z1, z2], dim=0)  # 2B x T x C
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Sizes of tensors must match except in dimension 0. Expected size 107 but got size 114 for tensor number 1 in the list.

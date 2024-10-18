@@ -1,0 +1,25 @@
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_setup.py:_flush():76] Configure stats pid to 99386
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_setup.py:_flush():76] Loading settings from /Users/shamba/.config/wandb/settings
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_setup.py:_flush():76] Loading settings from /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/settings
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'baselines/triplet.py', 'program_abspath': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/triplet.py', 'program': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/triplet.py'}
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_init.py:_log_setup():526] Logging user logs to /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240901_231757-s6ose5ud/logs/debug.log
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240901_231757-s6ose5ud/logs/debug-internal.log
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_init.py:init():566] calling init triggers
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-09-01 23:17:57,555 INFO    MainThread:99386 [wandb_init.py:init():611] wandb.init() called when a run is still active
+2024-09-01 23:17:57,556 INFO    MainThread:99386 [wandb_watch.py:watch():51] Watching
+2024-09-01 23:17:57,556 INFO    MainThread:99386 [wandb_run.py:_config_callback():1343] config_cb None None {'frame_shift': 600, 'hop_length': None, 'n_fft': 50, 'norm_params_path': 'params/norm_params/HUNT4/normalization_params_STFT_feats156_seqlen599/', 'normalize': True, 'padding_val': 0.0, 'phase': False, 'sequence_length': 3000, 'x_columns': ['back_x', 'back_y', 'back_z', 'thigh_x', 'thigh_y', 'thigh_z'], 'y_column': 'label'}
+2024-09-01 23:17:57,556 INFO    MainThread:99386 [wandb_run.py:_config_callback():1343] config_cb None None {'batch_size': 8, 'epochs': 1, 'feature_dim': 156, 'loss': 'LS_HATCL_LOSS', 'lr': 0.001, 'lr_scheduler': 'ExponentialTFDecay', 'margin': 5, 'margin_thresh': 0.4, 'mask_fraction': '1e-5', 'mse_lambda': '1e-30', 'number_sample': 1, 'number_subject': 10, 'optimizer': 'AdamW', 'out_features': 32, 'sequence_sample': 119, 'temperature': 0.5, 'tnc_window': 20, 'total_subjects': 30000, 'weight_decay': 0.0}
+2024-09-01 23:17:57,557 INFO    MainThread:99386 [wandb_run.py:_config_callback():1343] config_cb None None {'Algorithm': 'VANILLA CONTRASTIVE LOSS', 'Dataset': 'HUNT', 'Train_DS_size': 8539, 'Batch_Size': 8, 'Epochs': 1, 'Patience': 5, 'Seed': 42}
+2024-09-01 23:19:17,230 INFO    MainThread:99386 [wandb_run.py:_finish():1970] finishing run kazeem/Harth_cl_TRAIN_harth/jrp3c47k
+2024-09-01 23:19:17,231 INFO    MainThread:99386 [wandb_run.py:_atexit_cleanup():2210] got exitcode: 0
+2024-09-01 23:19:17,231 INFO    MainThread:99386 [wandb_run.py:_restore():2193] restore
+2024-09-01 23:19:17,231 INFO    MainThread:99386 [wandb_run.py:_restore():2199] restore done
+2024-09-01 23:19:25,755 INFO    MainThread:99386 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-09-01 23:19:25,758 INFO    MainThread:99386 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-09-01 23:19:25,762 INFO    MainThread:99386 [wandb_run.py:_footer_sync_info():3825] logging synced files

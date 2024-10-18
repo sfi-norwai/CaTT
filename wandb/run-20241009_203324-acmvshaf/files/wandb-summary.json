@@ -1,0 +1,1 @@
+{"Epoch": 5, "Davies-Bouldin Index Features": 1.516319946411137, "Calinski Harabasz Index Features": 5016.642675264922, "Silhouette Index Features": 0.25446709990501404, "Joint cluster metrics": 3.236455361464657, "_timestamp": 1728498995.030367, "_runtime": 190.39779496192932, "_step": 0, "_wandb": {"runtime": 228}}

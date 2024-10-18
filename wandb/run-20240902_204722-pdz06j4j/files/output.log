@@ -1,0 +1,16 @@
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 123/123 [00:09<00:00, 12.67it/s]
+Epoch 1/2, Train Loss: 3.4444
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/triplet.py", line 346, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/triplet.py", line 210, in main
+    tsne_plot, time_features = visualize_tsne(images, labeli, class_dict, attn_model)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/triplet.py", line 89, in visualize_tsne
+    plt.scatter(reduced_features_model[indices, 0], reduced_features_model[indices, 1], label=class_names[i])
+                                                                                              ~~~~~~~~~~~^^^
+KeyError: 5

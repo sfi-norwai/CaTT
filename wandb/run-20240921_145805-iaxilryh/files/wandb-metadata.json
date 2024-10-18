@@ -1,0 +1,44 @@
+{
+    "os": "macOS-14.4.1-arm64-arm-64bit",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-09-21T12:58:06.999711",
+    "startedAt": "2024-09-21T12:58:05.452425",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-p",
+        "configs/ecgconfig.yml",
+        "-d",
+        "data/ecg",
+        "-s",
+        "42"
+    ],
+    "state": "running",
+    "program": "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/margin_cl.py",
+    "codePathLocal": "baselines/margin_cl.py",
+    "codePath": "baselines/margin_cl.py",
+    "git": {
+        "remote": "https://github.com/ShambAI/Multi-Step-Contrastive-Learning.git",
+        "commit": "d9e6626c7d4128e33e14553f3e197e49dc34c299"
+    },
+    "email": null,
+    "root": "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL",
+    "host": "Abdul-Kazeems-MacBook-Pro.local",
+    "username": "shamba",
+    "executable": "/Users/shamba/anaconda3/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 175.8479347229004
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M2 Pro",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

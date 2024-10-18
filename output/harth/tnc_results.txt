@@ -1,0 +1,8 @@
+Baseline: tnc
+Seeds: [42, 53, 64, 75, 86, 97, 108, 123, 653, 543]
+Average DBI: 3.29
+Average CHI: 1790.03
+Average SC: 0.00
+Standard Deviation DBI: 0.52
+Standard Deviation CHI: 1136.84
+Standard Deviation SC: 0.05

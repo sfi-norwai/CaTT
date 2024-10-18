@@ -1,0 +1,9 @@
+
+  0%|                                                                                                                                                  | 0/1067 [00:22<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py", line 392, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py", line 196, in main
+    mask = torch.rand(time_series.shape) < mask_fraction
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'Tensor' and 'str'

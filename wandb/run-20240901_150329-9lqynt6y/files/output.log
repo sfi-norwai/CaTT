@@ -1,0 +1,102 @@
+
+ ... (more hidden) ...
+ ... (more hidden) ...
+Epoch 1/100, Train Loss: 724.8540
+Epoch 1/100, Validation Loss: 775.3736
+[2.8065476533913976]
+ ... (more hidden) ...
+Epoch 2/100, Train Loss: 682.2801
+ ... (more hidden) ...
+Epoch 2/100, Validation Loss: 769.2552
+[2.8065476533913976, 2.8065476555108044]
+
+
+
+
+
+
+ 99%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉ | 1057/1067 [00:32<00:00, 106.91it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:33<00:00, 31.89it/s]
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 266/266 [00:24<00:00, 10.71it/s]
+Epoch 3/100, Validation Loss: 766.6656
+[2.8065476533913976, 2.8065476555108044, 2.8065476406134615]
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏| 1059/1067 [00:31<00:00, 114.78it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:33<00:00, 32.09it/s]
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 266/266 [00:25<00:00, 10.59it/s]
+Epoch 4/100, Validation Loss: 762.2444
+[2.8065476533913976, 2.8065476555108044, 2.8065476406134615, 2.8065476262930624]
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋| 1064/1067 [00:31<00:00, 108.54it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:33<00:00, 31.97it/s]
+
+ 95%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏     | 253/266 [00:22<00:00, 87.68it/s]
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 266/266 [00:23<00:00, 11.27it/s]
+[2.8065476533913976, 2.8065476555108044, 2.8065476406134615, 2.8065476262930624, 2.806547642409404]
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:32<00:00, 32.98it/s]
+  0%|                                                                                                                                 | 0/266 [00:00<?, ?it/s]
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 266/266 [00:26<00:00, 10.21it/s]
+Epoch 6/100, Validation Loss: 760.9335
+[2.8065476533913976, 2.8065476555108044, 2.8065476406134615, 2.8065476262930624, 2.806547642409404, 2.806547614384228]
+
+
+
+
+
+
+ 99%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏| 1060/1067 [00:32<00:00, 105.15it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:33<00:00, 31.93it/s]
+  0%|                                                                                                                                 | 0/266 [00:14<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py", line 392, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py", line 239, in main
+    for batch_idx, (time_series, labels) in enumerate(tqdm(valid_loader)):
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 439, in __iter__
+    return self._get_iterator()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 387, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1040, in __init__
+    w.start()
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/context.py", line 288, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/popen_spawn_posix.py", line 32, in __init__
+    super().__init__(process_obj)
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/popen_spawn_posix.py", line 62, in _launch
+    f.write(fp.getbuffer())
+KeyboardInterrupt

@@ -1,0 +1,444 @@
+2024-09-03 19:58:13,422 INFO    StreamThr :69883 [internal.py:wandb_internal():85] W&B internal server running at pid: 69883, started at: 2024-09-03 19:58:13.404680
+2024-09-03 19:58:13,429 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status
+2024-09-03 19:58:13,445 INFO    WriterThread:69883 [datastore.py:open_for_write():87] open: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/run-skjwwshh.wandb
+2024-09-03 19:58:13,446 DEBUG   SenderThread:69883 [sender.py:send():391] send: header
+2024-09-03 19:58:13,475 DEBUG   SenderThread:69883 [sender.py:send():391] send: run
+2024-09-03 19:58:13,477 INFO    SenderThread:69883 [sender.py:_setup_resume():761] checking resume status for None/Dynamic_CLecg42/skjwwshh
+2024-09-03 19:58:14,158 INFO    SenderThread:69883 [dir_watcher.py:__init__():211] watching files in: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files
+2024-09-03 19:58:14,158 INFO    SenderThread:69883 [sender.py:_start_run_threads():1200] run started: skjwwshh with start time 1725386293.355082
+2024-09-03 19:58:14,172 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: run_start
+2024-09-03 19:58:14,180 DEBUG   HandlerThread:69883 [system_info.py:__init__():26] System info init
+2024-09-03 19:58:14,181 DEBUG   HandlerThread:69883 [system_info.py:__init__():41] System info init done
+2024-09-03 19:58:14,181 INFO    HandlerThread:69883 [system_monitor.py:start():194] Starting system monitor
+2024-09-03 19:58:14,181 INFO    SystemMonitor:69883 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-03 19:58:14,181 INFO    HandlerThread:69883 [system_monitor.py:probe():214] Collecting system info
+2024-09-03 19:58:14,181 INFO    SystemMonitor:69883 [interfaces.py:start():188] Started cpu monitoring
+2024-09-03 19:58:14,182 INFO    SystemMonitor:69883 [interfaces.py:start():188] Started disk monitoring
+2024-09-03 19:58:14,184 INFO    SystemMonitor:69883 [interfaces.py:start():188] Started gpuapple monitoring
+2024-09-03 19:58:14,185 INFO    SystemMonitor:69883 [interfaces.py:start():188] Started memory monitoring
+2024-09-03 19:58:14,186 INFO    SystemMonitor:69883 [interfaces.py:start():188] Started network monitoring
+2024-09-03 19:58:14,733 DEBUG   HandlerThread:69883 [system_info.py:probe():152] Probing system
+2024-09-03 19:58:14,738 DEBUG   HandlerThread:69883 [system_info.py:_probe_git():137] Probing git
+2024-09-03 19:58:14,755 DEBUG   HandlerThread:69883 [system_info.py:_probe_git():145] Probing git done
+2024-09-03 19:58:14,755 DEBUG   HandlerThread:69883 [system_info.py:probe():200] Probing system done
+2024-09-03 19:58:14,761 DEBUG   HandlerThread:69883 [system_monitor.py:probe():223] {'os': 'macOS-14.4.1-arm64-arm-64bit', 'python': '3.11.5', 'heartbeatAt': '2024-09-03T17:58:14.733867', 'startedAt': '2024-09-03T17:58:13.314803', 'docker': None, 'cuda': None, 'args': ('--p', 'configs/ecgconfig.yml', '--d', 'data/ecg', '--s', '42'), 'state': 'running', 'program': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py', 'codePathLocal': 'baselines/vanilla_cl.py', 'codePath': 'baselines/vanilla_cl.py', 'git': {'remote': 'https://github.com/ShambAI/Multi-Step-Contrastive-Learning.git', 'commit': '768398d80f070eb04cb7522cdd7707415e8448e5'}, 'email': None, 'root': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL', 'host': 'dhcp-10-24-1-11.wlan.ntnu.no', 'username': 'shamba', 'executable': '/Users/shamba/anaconda3/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 154.86963272094727}}, 'gpuapple': {'type': 'Apple M2 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 16.0}}
+2024-09-03 19:58:14,761 INFO    HandlerThread:69883 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-03 19:58:14,761 INFO    HandlerThread:69883 [system_monitor.py:probe():227] Publishing system info
+2024-09-03 19:58:14,761 DEBUG   HandlerThread:69883 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-03 19:58:15,166 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/conda-environment.yaml
+2024-09-03 19:58:18,125 DEBUG   HandlerThread:69883 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-03 19:58:18,126 INFO    HandlerThread:69883 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-03 19:58:18,135 DEBUG   SenderThread:69883 [sender.py:send():391] send: files
+2024-09-03 19:58:18,135 INFO    SenderThread:69883 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-03 19:58:18,178 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/conda-environment.yaml
+2024-09-03 19:58:18,178 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/wandb-metadata.json
+2024-09-03 19:58:18,334 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-03 19:58:18,334 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: python_packages
+2024-09-03 19:58:18,336 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-03 19:58:18,336 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 19:58:18,336 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: stop_status
+2024-09-03 19:58:18,569 DEBUG   SenderThread:69883 [sender.py:send():391] send: telemetry
+2024-09-03 19:58:18,569 DEBUG   SenderThread:69883 [sender.py:send():391] send: telemetry
+2024-09-03 19:58:18,569 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:58:18,569 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:58:18,569 DEBUG   SenderThread:69883 [sender.py:send():391] send: telemetry
+2024-09-03 19:58:18,569 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:58:18,569 WARNING SenderThread:69883 [sender.py:send_metric():1417] Seen metric with glob (shouldn't happen)
+2024-09-03 19:58:18,569 DEBUG   SenderThread:69883 [sender.py:send():391] send: telemetry
+2024-09-03 19:58:18,569 DEBUG   SenderThread:69883 [sender.py:send():391] send: telemetry
+2024-09-03 19:58:18,569 DEBUG   SenderThread:69883 [sender.py:send():391] send: telemetry
+2024-09-03 19:58:18,570 DEBUG   SenderThread:69883 [sender.py:send():391] send: config
+2024-09-03 19:58:18,570 DEBUG   SenderThread:69883 [sender.py:send():391] send: config
+2024-09-03 19:58:18,570 DEBUG   SenderThread:69883 [sender.py:send():391] send: config
+2024-09-03 19:58:18,570 DEBUG   SenderThread:69883 [sender.py:send():391] send: telemetry
+2024-09-03 19:58:18,570 DEBUG   SenderThread:69883 [sender.py:send():391] send: run
+2024-09-03 19:58:18,768 INFO    wandb-upload_0:69883 [upload_job.py:push():130] Uploaded file /var/folders/8_/bs02pqyd2h75v495kym36z2c0000gn/T/tmp44uqjenewandb/cxu31xq0-wandb-metadata.json
+2024-09-03 19:58:18,793 INFO    SenderThread:69883 [sender.py:send_run():1047] updated run: skjwwshh
+2024-09-03 19:58:18,793 DEBUG   SenderThread:69883 [sender.py:send():391] send: telemetry
+2024-09-03 19:58:19,284 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/config.yaml
+2024-09-03 19:58:19,284 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/requirements.txt
+2024-09-03 19:58:19,284 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:21,293 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:23,931 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:58:25,312 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:27,325 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:28,346 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 19:58:29,005 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:58:29,330 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:31,340 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:31,705 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,705 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,706 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,706 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,706 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,706 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,706 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,707 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,707 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,707 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,707 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,707 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,778 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,778 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,779 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,779 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,779 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,779 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,781 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,781 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,782 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,782 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,783 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:31,784 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:33,347 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:33,348 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-03 19:58:33,348 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: stop_status
+2024-09-03 19:58:35,199 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:58:35,359 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:37,374 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:38,353 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 19:58:40,329 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:58:41,387 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:43,399 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:45,238 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,238 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,238 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,239 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,239 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,239 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,239 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,239 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,240 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,240 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,240 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,240 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,310 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,312 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,312 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,312 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,313 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,314 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,314 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,315 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,316 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,317 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:45,410 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:45,477 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:58:46,415 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/config.yaml
+2024-09-03 19:58:47,421 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:48,355 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-03 19:58:48,355 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: stop_status
+2024-09-03 19:58:48,356 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 19:58:49,434 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:51,085 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:58:51,444 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:56,234 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:58:57,466 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:58:58,363 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 19:58:58,856 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,856 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,856 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,857 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,857 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,857 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,857 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,857 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,858 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,858 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,858 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,858 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,933 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,933 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,934 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,934 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,934 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,935 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,936 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,936 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,937 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,937 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,938 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:58,938 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:58:59,472 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:01,363 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:59:01,484 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:03,361 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-03 19:59:03,361 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: stop_status
+2024-09-03 19:59:03,489 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:05,503 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:06,451 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:59:07,513 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:08,371 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 19:59:11,501 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:59:11,531 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:11,898 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,898 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,898 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,898 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,898 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,899 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,899 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,899 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,899 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,899 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,899 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,900 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,972 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,972 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,973 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,973 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,973 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,974 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,975 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,975 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,976 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,977 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,978 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:11,979 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:13,541 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:14,210 DEBUG   SystemMonitor:69883 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-03 19:59:14,211 DEBUG   SenderThread:69883 [sender.py:send():391] send: telemetry
+2024-09-03 19:59:14,211 DEBUG   SenderThread:69883 [sender.py:send():391] send: stats
+2024-09-03 19:59:15,549 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:16,596 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:59:17,556 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/config.yaml
+2024-09-03 19:59:17,556 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:18,363 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-03 19:59:18,363 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: stop_status
+2024-09-03 19:59:18,373 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 19:59:19,567 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:21,578 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:22,446 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:59:25,309 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,309 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,309 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,310 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,310 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,310 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,384 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,384 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,385 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,385 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,386 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,386 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,387 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,387 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,388 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,388 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,390 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:25,390 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:27,551 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:59:27,605 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:28,376 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 19:59:29,612 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:31,622 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:32,673 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:59:33,309 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,309 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,309 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,310 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,310 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,310 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,310 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,310 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,311 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,369 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-03 19:59:33,369 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: stop_status
+2024-09-03 19:59:33,383 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,383 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,384 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,384 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,384 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,384 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,385 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,386 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,386 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,387 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,388 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,388 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:33,629 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:35,640 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:37,649 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:38,390 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 19:59:38,431 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:59:41,676 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:43,681 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:44,217 DEBUG   SenderThread:69883 [sender.py:send():391] send: stats
+2024-09-03 19:59:44,217 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:59:46,948 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:46,959 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:46,960 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:46,960 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:46,960 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,962 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,963 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,964 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,965 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,966 DEBUG   SenderThread:69883 [sender.py:send():391] send: history
+2024-09-03 19:59:46,968 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: summary_record
+2024-09-03 19:59:46,969 INFO    SenderThread:69883 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-03 19:59:46,970 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,970 DEBUG   SenderThread:69883 [sender.py:send():391] send: history
+2024-09-03 19:59:46,970 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: summary_record
+2024-09-03 19:59:46,972 INFO    SenderThread:69883 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-03 19:59:46,973 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,973 DEBUG   SenderThread:69883 [sender.py:send():391] send: history
+2024-09-03 19:59:46,973 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: summary_record
+2024-09-03 19:59:46,975 INFO    SenderThread:69883 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-03 19:59:46,975 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,975 DEBUG   SenderThread:69883 [sender.py:send():391] send: history
+2024-09-03 19:59:46,975 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: summary_record
+2024-09-03 19:59:46,977 INFO    SenderThread:69883 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-03 19:59:46,977 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:46,978 DEBUG   SenderThread:69883 [sender.py:send():391] send: history
+2024-09-03 19:59:46,978 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: summary_record
+2024-09-03 19:59:46,980 INFO    SenderThread:69883 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-03 19:59:47,407 DEBUG   SenderThread:69883 [sender.py:send():391] send: files
+2024-09-03 19:59:47,407 INFO    SenderThread:69883 [sender.py:_save_file():1466] saving file media/images/t-SNE_5_f5b1b93324eb1cb05ac5.png with policy now
+2024-09-03 19:59:47,407 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:47,409 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:47,409 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:47,409 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:47,409 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:47,410 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:47,410 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:47,410 DEBUG   SenderThread:69883 [sender.py:send():391] send: metric
+2024-09-03 19:59:47,410 DEBUG   SenderThread:69883 [sender.py:send():391] send: history
+2024-09-03 19:59:47,410 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: summary_record
+2024-09-03 19:59:47,412 INFO    SenderThread:69883 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-09-03 19:59:47,701 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:47,701 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/media/images/t-SNE_5_f5b1b93324eb1cb05ac5.png
+2024-09-03 19:59:47,701 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/wandb-summary.json
+2024-09-03 19:59:47,701 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/media
+2024-09-03 19:59:47,702 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/media/images
+2024-09-03 19:59:48,034 INFO    wandb-upload_0:69883 [upload_job.py:push():130] Uploaded file /var/folders/8_/bs02pqyd2h75v495kym36z2c0000gn/T/tmp44uqjenewandb/3puewpmo-media/images/t-SNE_5_f5b1b93324eb1cb05ac5.png
+2024-09-03 19:59:48,375 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-03 19:59:48,375 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: stop_status
+2024-09-03 19:59:48,384 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 19:59:48,802 INFO    wandb-upload_0:69883 [upload_job.py:push():130] Uploaded file /var/folders/8_/bs02pqyd2h75v495kym36z2c0000gn/T/tmp44uqjenewandb/fvflo39x-media/images/t-SNE_5_f5b1b93324eb1cb05ac5.png
+2024-09-03 19:59:49,608 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:59:49,711 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:50,714 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/config.yaml
+2024-09-03 19:59:53,727 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:54,902 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 19:59:55,738 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:56,267 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:56,267 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:56,267 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:56,268 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:56,268 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:56,268 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:56,268 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:56,268 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:56,269 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:56,269 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:56,269 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:56,269 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:57,749 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:58,389 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 19:59:58,791 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:58,791 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:58,791 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:58,792 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:58,792 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:58,793 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:58,794 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:58,794 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:58,794 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:58,795 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:58,796 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:58,796 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 19:59:59,759 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 19:59:59,981 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 20:00:01,770 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 20:00:03,377 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-03 20:00:03,377 DEBUG   SenderThread:69883 [sender.py:send_request():418] send_request: stop_status
+2024-09-03 20:00:03,781 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 20:00:04,422 INFO    cpu       :69883 [interfaces.py:monitor():138] Process cpu has exited.
+2024-09-03 20:00:04,423 DEBUG   SystemMonitor:69883 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-03 20:00:04,423 DEBUG   SystemMonitor:69883 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-03 20:00:04,428 DEBUG   SenderThread:69883 [sender.py:send():391] send: stats
+2024-09-03 20:00:05,433 DEBUG   HandlerThread:69883 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 20:00:05,790 INFO    Thread-13 :69883 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_195813-skjwwshh/files/output.log
+2024-09-03 20:00:06,678 INFO    MainThread:69883 [internal.py:handle_exit():75] Internal process exited

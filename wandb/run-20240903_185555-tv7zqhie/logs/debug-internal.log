@@ -1,0 +1,133 @@
+2024-09-03 18:55:55,308 INFO    StreamThr :57494 [internal.py:wandb_internal():85] W&B internal server running at pid: 57494, started at: 2024-09-03 18:55:55.307945
+2024-09-03 18:55:55,309 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: status
+2024-09-03 18:55:55,310 INFO    WriterThread:57494 [datastore.py:open_for_write():87] open: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/run-tv7zqhie.wandb
+2024-09-03 18:55:55,310 DEBUG   SenderThread:57494 [sender.py:send():391] send: header
+2024-09-03 18:55:55,326 DEBUG   SenderThread:57494 [sender.py:send():391] send: run
+2024-09-03 18:55:55,327 INFO    SenderThread:57494 [sender.py:_setup_resume():761] checking resume status for None/Dynamic_CLsleepeeg42/tv7zqhie
+2024-09-03 18:55:55,904 INFO    SenderThread:57494 [dir_watcher.py:__init__():211] watching files in: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files
+2024-09-03 18:55:55,905 INFO    SenderThread:57494 [sender.py:_start_run_threads():1200] run started: tv7zqhie with start time 1725382555.308441
+2024-09-03 18:55:55,917 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: run_start
+2024-09-03 18:55:55,927 DEBUG   HandlerThread:57494 [system_info.py:__init__():26] System info init
+2024-09-03 18:55:55,927 DEBUG   HandlerThread:57494 [system_info.py:__init__():41] System info init done
+2024-09-03 18:55:55,927 INFO    HandlerThread:57494 [system_monitor.py:start():194] Starting system monitor
+2024-09-03 18:55:55,928 INFO    SystemMonitor:57494 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-09-03 18:55:55,928 INFO    HandlerThread:57494 [system_monitor.py:probe():214] Collecting system info
+2024-09-03 18:55:55,928 INFO    SystemMonitor:57494 [interfaces.py:start():188] Started cpu monitoring
+2024-09-03 18:55:55,933 INFO    SystemMonitor:57494 [interfaces.py:start():188] Started disk monitoring
+2024-09-03 18:55:55,934 INFO    SystemMonitor:57494 [interfaces.py:start():188] Started gpuapple monitoring
+2024-09-03 18:55:55,935 INFO    SystemMonitor:57494 [interfaces.py:start():188] Started memory monitoring
+2024-09-03 18:55:55,936 INFO    SystemMonitor:57494 [interfaces.py:start():188] Started network monitoring
+2024-09-03 18:55:56,262 DEBUG   HandlerThread:57494 [system_info.py:probe():152] Probing system
+2024-09-03 18:55:56,266 DEBUG   HandlerThread:57494 [system_info.py:_probe_git():137] Probing git
+2024-09-03 18:55:56,283 DEBUG   HandlerThread:57494 [system_info.py:_probe_git():145] Probing git done
+2024-09-03 18:55:56,283 DEBUG   HandlerThread:57494 [system_info.py:probe():200] Probing system done
+2024-09-03 18:55:56,283 DEBUG   HandlerThread:57494 [system_monitor.py:probe():223] {'os': 'macOS-14.4.1-arm64-arm-64bit', 'python': '3.11.5', 'heartbeatAt': '2024-09-03T16:55:56.262407', 'startedAt': '2024-09-03T16:55:55.303998', 'docker': None, 'cuda': None, 'args': ('--p', 'configs/sleepconfig.yml', '--d', 'data/sleepeeg', '--s', '42'), 'state': 'running', 'program': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py', 'codePathLocal': 'baselines/vanilla_cl.py', 'codePath': 'baselines/vanilla_cl.py', 'git': {'remote': 'https://github.com/ShambAI/Multi-Step-Contrastive-Learning.git', 'commit': '08b1d4843d88dc2d8a5a3c98173f4b395fc66198'}, 'email': None, 'root': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL', 'host': 'dhcp-10-24-1-11.wlan.ntnu.no', 'username': 'shamba', 'executable': '/Users/shamba/anaconda3/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 460.4317207336426, 'used': 148.8268165588379}}, 'gpuapple': {'type': 'Apple M2 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 16.0}}
+2024-09-03 18:55:56,283 INFO    HandlerThread:57494 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-03 18:55:56,283 INFO    HandlerThread:57494 [system_monitor.py:probe():227] Publishing system info
+2024-09-03 18:55:56,283 DEBUG   HandlerThread:57494 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-03 18:55:56,910 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/conda-environment.yaml
+2024-09-03 18:55:59,183 DEBUG   HandlerThread:57494 [system_info.py:_save_conda():224] Saving conda packages done
+2024-09-03 18:55:59,184 INFO    HandlerThread:57494 [system_monitor.py:probe():229] Finished publishing system info
+2024-09-03 18:55:59,191 DEBUG   SenderThread:57494 [sender.py:send():391] send: files
+2024-09-03 18:55:59,191 INFO    SenderThread:57494 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-09-03 18:55:59,370 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: python_packages
+2024-09-03 18:55:59,370 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-03 18:55:59,371 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 18:55:59,371 DEBUG   SenderThread:57494 [sender.py:send_request():418] send_request: python_packages
+2024-09-03 18:55:59,372 DEBUG   SenderThread:57494 [sender.py:send_request():418] send_request: stop_status
+2024-09-03 18:55:59,614 DEBUG   SenderThread:57494 [sender.py:send():391] send: telemetry
+2024-09-03 18:55:59,614 DEBUG   SenderThread:57494 [sender.py:send():391] send: telemetry
+2024-09-03 18:55:59,615 DEBUG   SenderThread:57494 [sender.py:send():391] send: metric
+2024-09-03 18:55:59,615 DEBUG   SenderThread:57494 [sender.py:send():391] send: telemetry
+2024-09-03 18:55:59,615 DEBUG   SenderThread:57494 [sender.py:send():391] send: metric
+2024-09-03 18:55:59,615 WARNING SenderThread:57494 [sender.py:send_metric():1417] Seen metric with glob (shouldn't happen)
+2024-09-03 18:55:59,615 DEBUG   SenderThread:57494 [sender.py:send():391] send: telemetry
+2024-09-03 18:55:59,615 DEBUG   SenderThread:57494 [sender.py:send():391] send: telemetry
+2024-09-03 18:55:59,615 DEBUG   SenderThread:57494 [sender.py:send():391] send: telemetry
+2024-09-03 18:55:59,615 DEBUG   SenderThread:57494 [sender.py:send():391] send: config
+2024-09-03 18:55:59,615 DEBUG   SenderThread:57494 [sender.py:send():391] send: config
+2024-09-03 18:55:59,615 DEBUG   SenderThread:57494 [sender.py:send():391] send: config
+2024-09-03 18:55:59,616 DEBUG   SenderThread:57494 [sender.py:send():391] send: telemetry
+2024-09-03 18:55:59,616 DEBUG   SenderThread:57494 [sender.py:send():391] send: run
+2024-09-03 18:55:59,793 INFO    SenderThread:57494 [sender.py:send_run():1047] updated run: tv7zqhie
+2024-09-03 18:55:59,793 DEBUG   SenderThread:57494 [sender.py:send():391] send: telemetry
+2024-09-03 18:55:59,873 INFO    wandb-upload_0:57494 [upload_job.py:push():130] Uploaded file /var/folders/8_/bs02pqyd2h75v495kym36z2c0000gn/T/tmp3v460acpwandb/qga2ijy5-wandb-metadata.json
+2024-09-03 18:55:59,960 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/conda-environment.yaml
+2024-09-03 18:55:59,960 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/config.yaml
+2024-09-03 18:55:59,961 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/wandb-metadata.json
+2024-09-03 18:55:59,961 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/output.log
+2024-09-03 18:55:59,961 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/requirements.txt
+2024-09-03 18:56:00,799 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 18:56:01,959 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/output.log
+2024-09-03 18:56:05,852 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 18:56:05,974 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/output.log
+2024-09-03 18:56:07,362 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,362 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,362 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,363 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,363 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,363 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,363 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,363 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,363 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,364 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,364 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,364 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,387 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,387 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,388 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,388 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,388 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,388 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,389 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,389 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,390 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,390 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,391 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,391 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:07,984 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/output.log
+2024-09-03 18:56:09,378 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 18:56:09,994 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/output.log
+2024-09-03 18:56:11,383 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 18:56:12,002 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/output.log
+2024-09-03 18:56:14,372 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: stop_status
+2024-09-03 18:56:14,373 DEBUG   SenderThread:57494 [sender.py:send_request():418] send_request: stop_status
+2024-09-03 18:56:15,516 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,516 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,516 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,516 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,517 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,517 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,517 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,517 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,517 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,517 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,518 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,518 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,541 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,542 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,542 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,542 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,542 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,543 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,543 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,544 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,544 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,544 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,545 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:15,545 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: partial_history
+2024-09-03 18:56:16,019 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/output.log
+2024-09-03 18:56:16,440 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 18:56:18,044 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/output.log
+2024-09-03 18:56:19,385 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: internal_messages
+2024-09-03 18:56:20,045 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/output.log
+2024-09-03 18:56:21,978 DEBUG   HandlerThread:57494 [handler.py:handle_request():158] handle_request: status_report
+2024-09-03 18:56:24,034 INFO    cpu       :57494 [interfaces.py:monitor():138] Process cpu has exited.
+2024-09-03 18:56:24,034 INFO    memory    :57494 [interfaces.py:monitor():138] Process proc.memory.rssMB has exited.
+2024-09-03 18:56:24,035 DEBUG   SystemMonitor:57494 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-09-03 18:56:24,035 DEBUG   SystemMonitor:57494 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-09-03 18:56:24,035 DEBUG   SystemMonitor:57494 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-09-03 18:56:24,036 DEBUG   SenderThread:57494 [sender.py:send():391] send: telemetry
+2024-09-03 18:56:24,036 DEBUG   SenderThread:57494 [sender.py:send():391] send: stats
+2024-09-03 18:56:24,066 INFO    Thread-13 :57494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240903_185555-tv7zqhie/files/output.log
+2024-09-03 18:56:24,085 INFO    MainThread:57494 [internal.py:handle_exit():75] Internal process exited

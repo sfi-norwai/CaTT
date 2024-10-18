@@ -1,0 +1,10 @@
+
+  0%|                                                                                 | 0/1067 [00:00<?, ?it/s]
+  0%|                                                                                 | 0/1067 [00:25<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/tnc.py", line 441, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/tnc.py", line 264, in main
+    print(mc_sample.shape)
+          ^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'shape'

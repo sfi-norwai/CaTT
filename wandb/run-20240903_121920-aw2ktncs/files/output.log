@@ -1,0 +1,9 @@
+
+  0%|                                                                                 | 0/1067 [00:23<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/tnc.py", line 438, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/tnc.py", line 263, in main
+    x_t = x_t.repeat(mc_sample)
+          ^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Number of dimensions of repeat dims can not be smaller than number of dimensions of tensor

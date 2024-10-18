@@ -1,0 +1,46 @@
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_setup.py:_flush():77] Current SDK version is 0.17.8
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_setup.py:_flush():77] Configure stats pid to 36781
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_setup.py:_flush():77] Loading settings from /Users/shamba/.config/wandb/settings
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_setup.py:_flush():77] Loading settings from /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/settings
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_setup.py:_flush():77] Loading settings from environment variables: {}
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_setup.py:_flush():77] Inferring run settings from compute environment: {'program_relpath': 'baselines/margin_cl.py', 'program_abspath': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/margin_cl.py', 'program': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/margin_cl.py'}
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_setup.py:_flush():77] Applying login settings: {'api_key': '***REDACTED***'}
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_setup.py:_flush():77] Applying login settings: {'api_key': '***REDACTED***'}
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_setup.py:_flush():77] Applying login settings: {}
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_init.py:_log_setup():524] Logging user logs to /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240921_145314-6odk5xmp/logs/debug.log
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_init.py:_log_setup():525] Logging internal logs to /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240921_145314-6odk5xmp/logs/debug-internal.log
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_init.py:init():607] calling init triggers
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_init.py:init():614] wandb.init called with sweep_config: {}
+config: {}
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_init.py:init():657] starting backend
+2024-09-21 14:53:14,557 INFO    MainThread:36781 [wandb_init.py:init():661] setting up manager
+2024-09-21 14:53:14,559 INFO    MainThread:36781 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-09-21 14:53:14,559 INFO    MainThread:36781 [wandb_init.py:init():669] backend started and connected
+2024-09-21 14:53:14,562 INFO    MainThread:36781 [wandb_init.py:init():767] updated telemetry
+2024-09-21 14:53:14,589 INFO    MainThread:36781 [wandb_init.py:init():800] communicating run to backend with 90.0 second timeout
+2024-09-21 14:53:15,215 INFO    MainThread:36781 [wandb_init.py:init():851] starting run threads in backend
+2024-09-21 14:53:15,498 WARNING MainThread:36781 [wandb_init.py:init():1232] interrupted
+Traceback (most recent call last):
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1228, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 864, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/threading.py", line 622, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-09-21 14:53:22,965 WARNING MsgRouterThr:36781 [router.py:message_loop():77] message_loop has been closed

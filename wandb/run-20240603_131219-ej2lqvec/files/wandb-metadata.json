@@ -1,0 +1,31 @@
+{
+    "os": "macOS-14.4.1-arm64-arm-64bit",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-06-03T11:12:20.889929",
+    "startedAt": "2024-06-03T11:12:19.986663",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/full_marginloss.py",
+    "codePathLocal": "full_marginloss.py",
+    "codePath": "full_marginloss.py",
+    "host": "Abdul-Kazeems-MacBook-Pro.local",
+    "username": "shamba",
+    "executable": "/Users/shamba/anaconda3/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 125.36179733276367
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

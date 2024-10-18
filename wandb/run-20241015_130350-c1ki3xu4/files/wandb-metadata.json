@@ -1,0 +1,44 @@
+{
+    "os": "macOS-14.4.1-arm64-arm-64bit",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-10-15T11:03:51.961945",
+    "startedAt": "2024-10-15T11:03:50.784470",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-p",
+        "configs/kpiconfig.yml",
+        "-d",
+        "data/kpi",
+        "-s",
+        "4224"
+    ],
+    "state": "running",
+    "program": "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/tnc.py",
+    "codePathLocal": "baselines/tnc.py",
+    "codePath": "baselines/tnc.py",
+    "git": {
+        "remote": "https://github.com/ShambAI/Multi-Step-Contrastive-Learning.git",
+        "commit": "25cb8443b51c620c011ab643f57641843b1cb9c5"
+    },
+    "email": null,
+    "root": "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL",
+    "host": "Abdul-Kazeems-MacBook-Pro.local",
+    "username": "shamba",
+    "executable": "/Users/shamba/anaconda3/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 164.27796936035156
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M2 Pro",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

@@ -1,0 +1,8 @@
+Baseline: monoselfPAB
+Seeds: [42]
+Average DBI: 2.00
+Average CHI: 1.00
+Average SC: -0.08
+Standard Deviation DBI: 0.00
+Standard Deviation CHI: 0.00
+Standard Deviation SC: 0.00

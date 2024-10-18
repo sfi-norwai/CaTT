@@ -1,0 +1,24 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+
+
+
+
+
+
+
+
+
+  2%|██▎                                                                                                                           | 9/500 [03:29<3:10:34, 23.29s/it]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cost.py", line 397, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cost.py", line 202, in main
+    x_q, x_k =  x.to(device), my_transform.transform(x).to(device)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/src/models/costmodel.py", line 28, in transform
+    return self.jitter(self.shift(self.scale(x)))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/src/models/costmodel.py", line 33, in jitter
+    return x + (torch.randn(x.shape) * self.sigma)
+                ^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

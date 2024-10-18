@@ -1,0 +1,75 @@
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:30<00:00, 34.76it/s]
+  0%|                                                                                                                                                   | 0/266 [00:00<?, ?it/s]
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 266/266 [00:26<00:00, 10.22it/s]
+DB Index: 2.91, CH Index: 2881.86, SLH Index: 0.06
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:31<00:00, 33.89it/s]
+  0%|                                                                                                                                                  | 0/1067 [00:00<?, ?it/s]
+
+
+
+ 98%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌  | 1048/1067 [00:28<00:00, 239.63it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:30<00:00, 35.02it/s]
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:30<00:00, 34.79it/s]
+  0%|                                                                                                                                                  | 0/1067 [00:00<?, ?it/s]
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:30<00:00, 35.01it/s]
+  0%|                                                                                                                                                  | 0/1067 [00:00<?, ?it/s]
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎| 1062/1067 [00:29<00:00, 206.63it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:31<00:00, 34.31it/s]
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:30<00:00, 34.71it/s]
+  0%|                                                                                                                                                  | 0/1067 [00:00<?, ?it/s]
+  0%|                                                                                                                                                  | 0/1067 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cpc.py", line 387, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cpc.py", line 172, in main
+    for batch_idx, (time_series, labels) in enumerate(tqdm(train_loader)):
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 439, in __iter__
+    return self._get_iterator()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 387, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1040, in __init__
+    w.start()
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/context.py", line 288, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/popen_spawn_posix.py", line 32, in __init__
+    super().__init__(process_obj)
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/popen_spawn_posix.py", line 62, in _launch
+    f.write(fp.getbuffer())
+KeyboardInterrupt

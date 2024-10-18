@@ -1,0 +1,20 @@
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m Attempted to change value of key "hop_length" from None to 125
+[34m[1mwandb[39m[22m: [32m[41mERROR[39m[49m If you really want to do this, pass allow_val_change=True to config.update()
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cpc.py", line 411, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cpc.py", line 137, in main
+    wandb.config.update(args)
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 184, in update
+    sanitized = self._update(d, allow_val_change)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 177, in _update
+    sanitized = self._sanitize_dict(
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 264, in _sanitize_dict
+    k, v = self._sanitize(k, v, allow_val_change)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/wandb/sdk/wandb_config.py", line 285, in _sanitize
+    raise config_util.ConfigError(
+wandb.sdk.lib.config_util.ConfigError: Attempted to change value of key "hop_length" from None to 125
+If you really want to do this, pass allow_val_change=True to config.update()

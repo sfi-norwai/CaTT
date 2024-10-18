@@ -1,0 +1,18 @@
+2024-06-03 12:42:59,167 INFO    MainThread:57588 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-06-03 12:42:59,167 INFO    MainThread:57588 [wandb_setup.py:_flush():76] Configure stats pid to 57588
+2024-06-03 12:42:59,167 INFO    MainThread:57588 [wandb_setup.py:_flush():76] Loading settings from /Users/shamba/.config/wandb/settings
+2024-06-03 12:42:59,167 INFO    MainThread:57588 [wandb_setup.py:_flush():76] Loading settings from /Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/wandb/settings
+2024-06-03 12:42:59,167 INFO    MainThread:57588 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-03 12:42:59,167 INFO    MainThread:57588 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'single_fulloss.py', 'program_abspath': '/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/single_fulloss.py', 'program': '/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/single_fulloss.py'}
+2024-06-03 12:42:59,167 INFO    MainThread:57588 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-06-03 12:42:59,167 INFO    MainThread:57588 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-06-03 12:42:59,168 INFO    MainThread:57588 [wandb_init.py:_log_setup():526] Logging user logs to /Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/wandb/run-20240603_124259-98i50hnn/logs/debug.log
+2024-06-03 12:42:59,168 INFO    MainThread:57588 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/wandb/run-20240603_124259-98i50hnn/logs/debug-internal.log
+2024-06-03 12:42:59,168 INFO    MainThread:57588 [wandb_init.py:init():566] calling init triggers
+2024-06-03 12:42:59,168 INFO    MainThread:57588 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-06-03 12:42:59,168 INFO    MainThread:57588 [wandb_init.py:init():611] wandb.init() called when a run is still active
+2024-06-03 12:42:59,168 INFO    MainThread:57588 [wandb_watch.py:watch():51] Watching
+2024-06-03 12:42:59,168 INFO    MainThread:57588 [wandb_run.py:_config_callback():1343] config_cb None None {'frame_shift': 300, 'hop_length': None, 'n_fft': 50, 'norm_params_path': 'params/norm_params/HUNT4/normalization_params_STFT_feats156_seqlen599/', 'normalize': True, 'padding_val': 0.0, 'phase': False, 'sequence_length': 15000, 'x_columns': ['back_x', 'back_y', 'back_z', 'thigh_x', 'thigh_y', 'thigh_z'], 'y_column': 'label'}
+2024-06-03 12:42:59,169 INFO    MainThread:57588 [wandb_run.py:_config_callback():1343] config_cb None None {'batch_size': 16, 'epochs': 15, 'feature_dim': 500, 'loss': 'CrossEntropyLoss', 'lr': 0.001, 'lr_scheduler': 'ExponentialTFDecay', 'margin': 5, 'margin_thresh': 0.4, 'mask_fraction': 0.2, 'mse_lambda': 0.01, 'optimizer': 'Adam', 'temperature': 0.1, 'weight_decay': 0.0}
+2024-06-03 12:42:59,169 INFO    MainThread:57588 [wandb_run.py:_config_callback():1343] config_cb None None {'Algorithm': 'SINGLE FULL LOSS', 'Dataset': 'HUNT', 'Train_DS_size': 2040, 'Batch_Size': 16, 'Epochs': 15, 'Patience': 10}

@@ -1,0 +1,8 @@
+Baseline: triplet
+Seeds: [42, 53, 64, 75, 86, 97, 108, 123, 653, 543]
+Average DBI: 6.65
+Average CHI: 315.95
+Average SC: -0.36
+Standard Deviation DBI: 0.81
+Standard Deviation CHI: 107.94
+Standard Deviation SC: 0.05

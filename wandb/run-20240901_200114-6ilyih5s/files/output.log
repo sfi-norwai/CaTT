@@ -1,0 +1,116 @@
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:37<00:00, 28.44it/s]
+  0%|                                                                                                                                                   | 0/266 [00:00<?, ?it/s]
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 266/266 [00:24<00:00, 11.04it/s]
+Epoch 1/100, Validation Loss: 0.2223
+  0%|                                                                                                                                                  | 0/1067 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+ 99%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉ | 1059/1067 [00:36<00:00, 80.30it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:37<00:00, 28.34it/s]
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌| 1064/1067 [00:36<00:00, 75.70it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:37<00:00, 28.43it/s]
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:36<00:00, 73.51it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:38<00:00, 27.91it/s]
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:38<00:00, 27.60it/s]
+  0%|                                                                                                                                                  | 0/1067 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎| 1062/1067 [00:36<00:00, 70.94it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:37<00:00, 28.55it/s]
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:37<00:00, 28.66it/s]
+  0%|                                                                                                                                                  | 0/1067 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:38<00:00, 27.83it/s]
+  0%|                                                                                                                                                  | 0/1067 [00:00<?, ?it/s]
+  0%|                                                                                                                                                  | 0/1067 [05:13<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/monoselfPAB.py", line 481, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/monoselfPAB.py", line 229, in main
+    for batch_idx, (time_series, labels) in enumerate(tqdm(train_loader)):
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 439, in __iter__
+    return self._get_iterator()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 387, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1040, in __init__
+    w.start()
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+                  ^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/context.py", line 288, in _Popen
+    return Popen(process_obj)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/popen_spawn_posix.py", line 32, in __init__
+    super().__init__(process_obj)
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/popen_spawn_posix.py", line 62, in _launch
+    f.write(fp.getbuffer())
+KeyboardInterrupt

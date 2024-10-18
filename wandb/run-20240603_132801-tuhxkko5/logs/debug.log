@@ -1,0 +1,46 @@
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Configure stats pid to 61469
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Loading settings from /Users/shamba/.config/wandb/settings
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Loading settings from /Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/wandb/settings
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'double_margin.py', 'program_abspath': '/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/double_margin.py', 'program': '/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/double_margin.py'}
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_init.py:_log_setup():526] Logging user logs to /Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/wandb/run-20240603_132801-tuhxkko5/logs/debug.log
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/wandb/run-20240603_132801-tuhxkko5/logs/debug-internal.log
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_init.py:init():566] calling init triggers
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_init.py:init():616] starting backend
+2024-06-03 13:28:01,596 INFO    MainThread:61469 [wandb_init.py:init():620] setting up manager
+2024-06-03 13:28:01,598 INFO    MainThread:61469 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-06-03 13:28:01,598 INFO    MainThread:61469 [wandb_init.py:init():628] backend started and connected
+2024-06-03 13:28:01,601 INFO    MainThread:61469 [wandb_init.py:init():720] updated telemetry
+2024-06-03 13:28:01,601 INFO    MainThread:61469 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-06-03 13:28:02,347 INFO    MainThread:61469 [wandb_run.py:_on_init():2262] communicating current version
+2024-06-03 13:28:02,441 INFO    MainThread:61469 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-06-03 13:28:02,441 INFO    MainThread:61469 [wandb_init.py:init():804] starting run threads in backend
+2024-06-03 13:28:05,423 INFO    MainThread:61469 [wandb_run.py:_console_start():2241] atexit reg
+2024-06-03 13:28:05,424 INFO    MainThread:61469 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-06-03 13:28:05,424 INFO    MainThread:61469 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-06-03 13:28:05,424 INFO    MainThread:61469 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-06-03 13:28:05,424 INFO    MainThread:61469 [wandb_init.py:init():847] run started, returning control to user process
+2024-06-03 13:28:05,427 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-06-03 13:28:05,427 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Configure stats pid to 61469
+2024-06-03 13:28:05,427 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Loading settings from /Users/shamba/.config/wandb/settings
+2024-06-03 13:28:05,427 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Loading settings from /Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/wandb/settings
+2024-06-03 13:28:05,427 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-06-03 13:28:05,427 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'double_margin.py', 'program_abspath': '/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/double_margin.py', 'program': '/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/double_margin.py'}
+2024-06-03 13:28:05,428 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-06-03 13:28:05,428 INFO    MainThread:61469 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-06-03 13:28:05,428 INFO    MainThread:61469 [wandb_init.py:_log_setup():526] Logging user logs to /Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/wandb/run-20240603_132805-dr7x6p99/logs/debug.log
+2024-06-03 13:28:05,428 INFO    MainThread:61469 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/wandb/run-20240603_132805-dr7x6p99/logs/debug-internal.log
+2024-06-03 13:28:05,428 INFO    MainThread:61469 [wandb_init.py:init():566] calling init triggers
+2024-06-03 13:28:05,428 INFO    MainThread:61469 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-06-03 13:28:05,428 INFO    MainThread:61469 [wandb_init.py:init():611] wandb.init() called when a run is still active
+2024-06-03 13:28:05,428 INFO    MainThread:61469 [wandb_watch.py:watch():51] Watching
+2024-06-03 13:28:05,428 INFO    MainThread:61469 [wandb_run.py:_config_callback():1343] config_cb None None {'frame_shift': 300, 'hop_length': None, 'n_fft': 50, 'norm_params_path': 'params/norm_params/HUNT4/normalization_params_STFT_feats156_seqlen599/', 'normalize': True, 'padding_val': 0.0, 'phase': False, 'sequence_length': 15000, 'x_columns': ['back_x', 'back_y', 'back_z', 'thigh_x', 'thigh_y', 'thigh_z'], 'y_column': 'label'}
+2024-06-03 13:28:05,429 INFO    MainThread:61469 [wandb_run.py:_config_callback():1343] config_cb None None {'batch_size': 16, 'epochs': 15, 'feature_dim': 500, 'loss': 'MARGIN_LOSS', 'lr': 0.001, 'lr_scheduler': 'ExponentialTFDecay', 'margin': 5, 'margin_thresh': 0.4, 'mask_fraction': 0.2, 'mse_lambda': 0.01, 'number_sample': 1, 'number_subject': 2, 'optimizer': 'Adam', 'temperature': 0.1, 'total_subjects': 22, 'weight_decay': 0.0}
+2024-06-03 13:28:05,429 INFO    MainThread:61469 [wandb_run.py:_config_callback():1343] config_cb None None {'Algorithm': 'FULL MARGIN LOSS', 'Dataset': 'HUNT', 'Train_DS_size': 82, 'Batch_Size': 16, 'Epochs': 15, 'Patience': 10}

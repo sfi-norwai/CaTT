@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py", line 376, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py", line 184, in main
+    l = args['scale_factor']
+        ~~~~^^^^^^^^^^^^^^^^
+KeyError: 'scale_factor'

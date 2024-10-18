@@ -1,0 +1,16 @@
+
+
+
+
+
+
+ 83%|██████████████████████████████████████████████████████████████████████████████████████████████████████▌                    | 5/6 [00:43<00:08,  8.64s/it]
+  0%|                                                                                                                                   | 0/2 [00:00<?, ?it/s]
+  0%|                                                                                                                                   | 0/2 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/full_marginloss.py", line 304, in <module>
+    main(train_loader, valid_loader)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/full_marginloss.py", line 199, in main
+    sim_vector = check_next_two_elements_tensor(time_series, thresh)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'check_next_two_elements_tensor' is not defined

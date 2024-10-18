@@ -1,0 +1,8 @@
+Baseline: vanilla_cl
+Seeds: [42]
+Average DBI: 2.24
+Average CHI: 5081.74
+Average SC: 0.06
+Standard Deviation DBI: 0.00
+Standard Deviation CHI: 0.00
+Standard Deviation SC: 0.00

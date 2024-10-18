@@ -1,0 +1,9 @@
+
+  0%|                                                                                                                                                  | 0/1067 [00:22<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/monoselfPAB.py", line 475, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/monoselfPAB.py", line 270, in main
+    abs_diff = torch.abs(target_tensor - masked_features)
+                         ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+RuntimeError: The size of tensor a (156) must match the size of tensor b (32) at non-singleton dimension 1

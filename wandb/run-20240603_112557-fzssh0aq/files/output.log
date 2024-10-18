@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 94%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍       | 15/16 [01:46<00:07,  7.08s/it]
+  0%|                                                                                                                                   | 0/4 [00:00<?, ?it/s]
+
+
+
+ 75%|████████████████████████████████████████████████████████████████████████████████████████████▎                              | 3/4 [00:13<00:03,  3.93s/it]
+ 75%|████████████████████████████████████████████████████████████████████████████████████████████▎                              | 3/4 [00:14<00:04,  4.73s/it]
+
+
+
+
+
+
+
+ 38%|█████████████████████████████████████████████▊                                                                            | 6/16 [03:23<05:39, 33.96s/it]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/single_fulloss.py", line 257, in <module>
+    main(train_loader, valid_loader)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/single_fulloss.py", line 136, in main
+    train_loss.backward()
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/_tensor.py", line 522, in backward
+    torch.autograd.backward(
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/autograd/__init__.py", line 266, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/wandb/wandb_torch.py", line 272, in <lambda>
+    handle = var.register_hook(lambda grad: _callback(grad, log_track))
+KeyboardInterrupt

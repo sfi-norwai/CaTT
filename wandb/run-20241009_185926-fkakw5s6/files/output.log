@@ -1,0 +1,11 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+  0%|                                                                                                                                        | 0/500 [00:03<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cost.py", line 397, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cost.py", line 218, in main
+    train_running_loss += train_loss.item() * x.size(0)
+                                              ^
+NameError: name 'x' is not defined
+torch.Size([8, 300, 16])
+torch.Size([8, 300, 16])

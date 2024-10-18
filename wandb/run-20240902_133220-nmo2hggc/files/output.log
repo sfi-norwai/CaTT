@@ -1,0 +1,16 @@
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 123/123 [00:07<00:00, 17.46it/s]
+  0%|                                                                                                                                                    | 0/30 [00:00<?, ?it/s]
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:04<00:00,  6.15it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cpc.py", line 411, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cpc.py", line 274, in main
+    tsne_plot, time_features = visualize_tsne(images, labeli, class_dict, attn_model)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/cpc.py", line 90, in visualize_tsne
+    plt.scatter(reduced_features_model[indices, 0], reduced_features_model[indices, 1], label=class_names[i])
+                                                                                              ~~~~~~~~~~~^^^
+KeyError: 4

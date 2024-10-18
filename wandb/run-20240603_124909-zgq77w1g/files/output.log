@@ -1,0 +1,19 @@
+
+
+  1%|▉                                                                                                                        | 1/128 [00:17<36:28, 17.23s/it]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/single_fulloss.py", line 265, in <module>
+    main(train_loader, valid_loader)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/single_fulloss.py", line 133, in main
+    contrastive_loss = margin_loss(features, sim_vector)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/src/losses/contrastive.py", line 292, in forward
+    exp_denominator = torch.sum(exp_denominator, dim=0) - exp_numerator
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

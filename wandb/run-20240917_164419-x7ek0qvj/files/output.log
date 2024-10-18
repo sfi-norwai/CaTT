@@ -1,0 +1,28 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+
+
+
+
+
+ 10%|███████████████████████████████████████████████▏                                                                                                                                                                                                                                                                                                                                                                                                                                        | 5/50 [02:32<24:23, 32.52s/it]
+
+
+
+
+
+ 20%|██████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                                                                                                                                                                                                                                                                                        | 10/50 [05:04<21:55, 32.90s/it]
+
+ 22%|███████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                                                                                                                                                                                                                                                               | 11/50 [05:54<20:58, 32.26s/it]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/ts2vec.py", line 397, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/ts2vec.py", line 212, in main
+    train_loss = hierarchical_contrastive_loss(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/src/losses/contrastive.py", line 30, in hierarchical_contrastive_loss
+    loss += alpha * instance_contrastive_loss(z1, z2)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/src/losses/contrastive.py", line 49, in instance_contrastive_loss
+    sim = torch.matmul(z, z.transpose(1, 2))  # T x 2B x 2B
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

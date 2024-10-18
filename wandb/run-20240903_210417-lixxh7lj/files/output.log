@@ -1,0 +1,142 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+
+  0%|▎                                                                                                                              | 1/499 [00:11<1:37:25, 11.74s/it]
+Epoch 2/500, Train Loss: 1.2124
+
+
+  1%|▊                                                                                                                              | 3/499 [00:34<1:33:28, 11.31s/it]
+
+  1%|█                                                                                                                              | 4/499 [00:45<1:32:04, 11.16s/it]
+Epoch 5/500, Train Loss: 1.2186
+
+  1%|█▎                                                                                                                             | 5/499 [01:14<2:26:03, 17.74s/it]
+
+  1%|█▌                                                                                                                             | 6/499 [01:25<2:06:21, 15.38s/it]
+
+
+  2%|██                                                                                                                             | 8/499 [01:47<1:47:52, 13.18s/it]
+Epoch 9/500, Train Loss: 1.2146
+
+  2%|██▎                                                                                                                            | 9/499 [01:59<1:42:50, 12.59s/it]
+
+  2%|██▌                                                                                                                           | 10/499 [02:28<2:25:58, 17.91s/it]
+
+  2%|██▊                                                                                                                           | 11/499 [02:40<2:10:57, 16.10s/it]
+
+  2%|███                                                                                                                           | 12/499 [02:52<2:00:12, 14.81s/it]
+
+
+  3%|███▌                                                                                                                          | 14/499 [03:16<1:47:42, 13.33s/it]
+Epoch 15/500, Train Loss: 1.2235
+
+
+  3%|████                                                                                                                          | 16/499 [03:56<2:08:00, 15.90s/it]
+
+  3%|████▎                                                                                                                         | 17/499 [04:07<1:54:57, 14.31s/it]
+Epoch 18/500, Train Loss: 1.2203
+
+
+  4%|████▊                                                                                                                         | 19/499 [04:28<1:40:11, 12.52s/it]
+Epoch 20/500, Train Loss: 1.2121
+
+
+  4%|█████▎                                                                                                                        | 21/499 [05:12<2:10:33, 16.39s/it]
+Epoch 22/500, Train Loss: 1.2165
+
+
+  5%|█████▊                                                                                                                        | 23/499 [05:34<1:49:35, 13.81s/it]
+Epoch 24/500, Train Loss: 1.2098
+
+  5%|██████                                                                                                                        | 24/499 [05:45<1:41:57, 12.88s/it]
+
+  5%|██████▎                                                                                                                       | 25/499 [06:15<2:20:58, 17.84s/it]
+
+
+  5%|██████▊                                                                                                                       | 27/499 [06:36<1:51:59, 14.24s/it]
+Epoch 28/500, Train Loss: 1.2188
+
+  6%|███████                                                                                                                       | 28/499 [06:49<1:48:40, 13.84s/it]
+
+  6%|███████▎                                                                                                                      | 29/499 [07:02<1:46:12, 13.56s/it]
+
+
+  6%|███████▊                                                                                                                      | 31/499 [07:41<2:03:05, 15.78s/it]
+Epoch 32/500, Train Loss: 1.2258
+
+  6%|████████                                                                                                                      | 32/499 [07:52<1:51:11, 14.29s/it]
+
+  7%|████████▎                                                                                                                     | 33/499 [08:02<1:41:33, 13.08s/it]
+
+  7%|████████▌                                                                                                                     | 34/499 [08:12<1:34:57, 12.25s/it]
+
+  7%|████████▊                                                                                                                     | 35/499 [08:39<2:08:58, 16.68s/it]
+
+
+  7%|█████████▎                                                                                                                    | 37/499 [09:01<1:45:28, 13.70s/it]
+Epoch 38/500, Train Loss: 1.2139
+
+  8%|█████████▌                                                                                                                    | 38/499 [09:11<1:37:31, 12.69s/it]
+
+  8%|█████████▊                                                                                                                    | 39/499 [09:22<1:33:09, 12.15s/it]
+
+
+  8%|██████████▎                                                                                                                   | 41/499 [09:59<1:52:47, 14.78s/it]
+Epoch 42/500, Train Loss: 1.2103
+
+  8%|██████████▌                                                                                                                   | 42/499 [10:10<1:42:19, 13.43s/it]
+
+
+  9%|███████████                                                                                                                   | 44/499 [10:31<1:30:53, 11.98s/it]
+Epoch 45/500, Train Loss: 1.2242
+
+
+  9%|███████████▌                                                                                                                  | 46/499 [11:09<1:51:42, 14.80s/it]
+
+  9%|███████████▊                                                                                                                  | 47/499 [11:19<1:41:16, 13.44s/it]
+Epoch 48/500, Train Loss: 1.2148
+
+ 10%|████████████                                                                                                                  | 48/499 [11:30<1:35:11, 12.66s/it]
+
+ 10%|████████████▎                                                                                                                 | 49/499 [11:40<1:29:58, 12.00s/it]
+
+
+ 10%|████████████▉                                                                                                                 | 51/499 [12:19<1:52:36, 15.08s/it]
+ 10%|████████████▉                                                                                                                 | 51/499 [12:19<1:52:36, 15.08s/it]Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x10cee0680>
+Traceback (most recent call last):
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1479, in __del__
+    self._shutdown_workers()
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1443, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/popen_fork.py", line 40, in wait
+    if not wait([self.sentinel], timeout):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/multiprocessing/connection.py", line 930, in wait
+    ready = selector.select(timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:
+ 10%|████████████▉                                                                                                                 | 51/499 [12:26<1:49:19, 14.64s/it]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/monoselfPAB.py", line 504, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/monoselfPAB.py", line 282, in main
+    optimizer.step()
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/optim/optimizer.py", line 385, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/optim/optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/optim/adamw.py", line 187, in step
+    adamw(
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/optim/adamw.py", line 339, in adamw
+    func(
+  File "/Users/shamba/anaconda3/lib/python3.11/site-packages/torch/optim/adamw.py", line 470, in _single_tensor_adamw
+    denom = (exp_avg_sq.sqrt() / bias_correction2_sqrt).add_(eps)
+             ^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

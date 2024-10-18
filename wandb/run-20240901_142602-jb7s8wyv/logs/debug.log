@@ -1,0 +1,19 @@
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_setup.py:_flush():76] Configure stats pid to 41068
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_setup.py:_flush():76] Loading settings from /Users/shamba/.config/wandb/settings
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_setup.py:_flush():76] Loading settings from /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/settings
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'baselines/vanilla_cl.py', 'program_abspath': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py', 'program': '/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py'}
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_init.py:_log_setup():526] Logging user logs to /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240901_142602-jb7s8wyv/logs/debug.log
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_init.py:_log_setup():527] Logging internal logs to /Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/wandb/run-20240901_142602-jb7s8wyv/logs/debug-internal.log
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_init.py:init():566] calling init triggers
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-09-01 14:26:02,917 INFO    MainThread:41068 [wandb_init.py:init():611] wandb.init() called when a run is still active
+2024-09-01 14:26:02,918 INFO    MainThread:41068 [wandb_watch.py:watch():51] Watching
+2024-09-01 14:26:02,918 INFO    MainThread:41068 [wandb_run.py:_config_callback():1343] config_cb None None {'frame_shift': 600, 'hop_length': None, 'n_fft': 50, 'norm_params_path': 'params/norm_params/HUNT4/normalization_params_STFT_feats156_seqlen599/', 'normalize': True, 'padding_val': 0.0, 'phase': False, 'sequence_length': 3000, 'x_columns': ['back_x', 'back_y', 'back_z', 'thigh_x', 'thigh_y', 'thigh_z'], 'y_column': 'label'}
+2024-09-01 14:26:02,919 INFO    MainThread:41068 [wandb_run.py:_config_callback():1343] config_cb None None {'batch_size': 8, 'epochs': 100, 'feature_dim': 156, 'loss': 'HATCL_LOSS', 'lr': 0.0001, 'lr_scheduler': 'ExponentialTFDecay', 'margin': 5, 'margin_thresh': 0.4, 'mask_fraction': '1e-5', 'mse_lambda': '1e-30', 'number_sample': 1, 'number_subject': 10, 'optimizer': 'AdamW', 'out_features': 32, 'temperature': 0.1, 'total_subjects': 30000, 'weight_decay': 0.0}
+2024-09-01 14:26:02,919 INFO    MainThread:41068 [wandb_run.py:_config_callback():1343] config_cb None None {'Algorithm': 'VANILLA CONTRASTIVE LOSS', 'Dataset': 'HUNT', 'Train_DS_size': 8539, 'Batch_Size': 8, 'Epochs': 100, 'Patience': 5}
+2024-09-01 14:26:31,258 WARNING MsgRouterThr:41068 [router.py:message_loop():77] message_loop has been closed

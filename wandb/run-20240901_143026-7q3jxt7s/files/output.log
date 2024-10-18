@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1067/1067 [00:35<00:00, 30.24it/s]
+  0%|                                                                                                                                                   | 0/266 [00:00<?, ?it/s]
+  0%|                                                                                                                                                   | 0/266 [00:22<?, ?it/s]
+Traceback (most recent call last):
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py", line 392, in <module>
+    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
+  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/vanilla_cl.py", line 241, in main
+    time_series = time_series.to(device)
+                  ^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'to'
