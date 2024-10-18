@@ -50,7 +50,8 @@ SEED: 77
 NUM_WORKERS: 4  # Num of workers for data loading
 NUM_GPUS: [0]  # How many/which GPUs to use
 WANDB: True
-WANDB_KEY: '97d81dddbca83b1902e24ed795e1ccab52c29943'
+WANDB_KEY: #Enter key here
+
 
 seeds: [42, 53, 64, 75, 86]
 baselines: [vanilla_cl, double_cl, margin_cl, ts2vec, infoTS, triplet, tnc, cpc, monoselfPAB, reconstruction]
