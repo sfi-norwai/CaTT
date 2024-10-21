@@ -256,7 +256,7 @@ if __name__ == "__main__":
     parser.add_argument('-a', '--algorithm', required=False, type=str,
                         help='algorithm.', default=['dynacl'])
     parser.add_argument('-e', '--num_epochs', required=False, type=int,
-                        help='number epochs.', default=5)
+                        help='number epochs.', default=50)
     parser.add_argument('-s', '--seed_values', required=False, type=int,
                         help='seed value.', default=[42])
     args = parser.parse_args()
