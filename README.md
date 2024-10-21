@@ -74,8 +74,8 @@ This repository provides reimplementations of several baselines for time-series 
 - [**TS2Vec**](https://github.com/zhihanyue/ts2vec): Towards Universal Representation of Time Series.
 - [**CoST**](https://github.com/salesforce/CoST): Contrastive Learning of Disentangled Seasonal-Trend Representations for Time Series Forecasting.
 - [**InfoTS**](https://github.com/chengw07/InfoTS): Time Series Contrastive Learning with Information-Aware Augmentations.
-- [**CPC**](https://github.com/davidtellez/contrastive-predictive-coding): Contrastive Predictive coding for unsupervised learning of representations.
-- [**TNC**](https://github.com/sanatonek/TNC_representation_learning): Time-series representation through neighborhood contrasting.
+- [**CPC**](https://github.com/davidtellez/contrastive-predictive-coding): Representation Learning with Contrastive Predictive Coding.
+- [**TNC**](https://github.com/sanatonek/TNC_representation_learning): Unsupervised Representation Learning for TimeSeries with Temporal Neighborhood Coding.
 - [**SelfPAB**](https://github.com/ntnu-ai-lab/SelfPAB): Self-supervised learning with randomized cross-sensor masked reconstruction for human activity recognition.
 
 Please check out the original repositories for more details.
