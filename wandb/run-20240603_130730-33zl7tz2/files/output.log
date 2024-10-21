@@ -1,9 +1,0 @@
-
-  0%|                                                                                                                                   | 0/6 [00:08<?, ?it/s]
-Traceback (most recent call last):
-  File "/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/full_marginloss.py", line 271, in <module>
-    main(train_loader, valid_loader)
-  File "/Users/shamba/Desktop/Paper 1 - HAR RL/MarginMultistepCL/full_marginloss.py", line 139, in main
-    contrastive_loss = full_margin_loss(features, sim_vector)
-                       ^^^^^^^^^^^^^^^^
-UnboundLocalError: cannot access local variable 'full_margin_loss' where it is not associated with a value

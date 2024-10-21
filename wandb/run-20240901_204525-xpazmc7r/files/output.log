@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/tnc.py", line 464, in <module>
-    main(train_loader, valid_loader, valid_balanced_dataloader, seed)
-  File "/Users/shamba/Desktop/Paper 1 - HAR RL/NODATA_MarginMultistepCL/baselines/tnc.py", line 214, in main
-    window_size = args['tnc_window']
-                  ~~~~^^^^^^^^^^^^^^
-KeyError: 'tnc_window'
