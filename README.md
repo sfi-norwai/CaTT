@@ -2,15 +2,15 @@
 
 This repository contains the implementation of [**DynaCL**](https://arxiv.com), a method for unsupervised representation learning of time series data. The DynaCL method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
 
-##Image
+![DynaCL Framework](./images/dynacl.png?raw=true "Title")
 
 
 ## Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/sfi-norwai/contrastive-learning.git
+    cd contrastive-learning
     ```
 
 2. Install the required dependencies:
@@ -62,12 +62,13 @@ python models/cost.py -p configs/sleepconfig.yml -d data/sleepeeg -s 42
 
 Figure \ref{fig:sleepfeaures} shows a t-SNE plot of the learned representation from all baselines on all three datasets.
 
-##Images
+![t-SNE Visualization](./images/tsne.png?raw=true "Title")
+
 
 
 ## Acknowledgements
 
-This repository provides reimplementations of several baselines for time-series representation learning. The following projects inspired or contributed to this work:
+This repository provides reimplementations of several baselines for time-series representation learning using some parts of the codes provided by the following  works:
 
 - [**TS2Vec**](https://github.com/zhihanyue/ts2vec): Time-series representation learning via temporal and contextual contrasting.
 - [**CoST**](https://github.com/salesforce/CoST): Contrastive learning of time-series.
