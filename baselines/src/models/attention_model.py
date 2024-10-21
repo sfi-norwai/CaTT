@@ -172,3 +172,17 @@ class Discriminator(torch.nn.Module):
         x_all = torch.cat([x, x_tild], -1)
         p = self.model(x_all)
         return p.view((-1,))
+    
+# Example: Define a frozen backbone and a linear classifier
+class LinearEvaluation(nn.Module):
+    def __init__(self, backbone, num_classes):
+        super(LinearEvaluation, self).__init__()
+        self.backbone = backbone
+        self.backbone.requires_grad_(False)
+        self.classifier = nn.Linear(32, num_classes)  # Add linear classifier
+    
+    def forward(self, x):
+        with torch.no_grad():  # Ensure backbone is not updated
+            features = self.backbone(x)  # Extract features using frozen backbone
+            
+        return self.classifier(features)  # Feed features to linear classifier

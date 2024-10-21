@@ -1,0 +1,37 @@
+{
+    "os": "macOS-14.4.1-arm64-arm-64bit",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-10-21T21:45:25.133923",
+    "startedAt": "2024-10-21T21:45:22.436245",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/shamba/Desktop/Paper 1 - HAR RL/sfi2/contrastive-learning/baselines/cost.py",
+    "codePathLocal": "baselines/cost.py",
+    "codePath": "baselines/cost.py",
+    "git": {
+        "remote": "https://github.com/sfi-norwai/contrastive-learning.git",
+        "commit": "a741bbbcb06957f297da00ecbe0bcef0ac7f0978"
+    },
+    "email": null,
+    "root": "/Users/shamba/Desktop/Paper 1 - HAR RL/sfi2/contrastive-learning",
+    "host": "Abdul-Kazeems-MacBook-Pro.local",
+    "username": "shamba",
+    "executable": "/Users/shamba/anaconda3/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 164.6183204650879
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M2 Pro",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
