@@ -1,6 +1,6 @@
 # DynaCL: Dynamic Contrastive Learning for Time-Series Representation
 
-This repository contains the implementation of [**DynaCL**](https://arxiv.com), a method for unsupervised representation learning of time series data. The DynaCL method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
+This repository contains the Pytorch implementation of [**DynaCL**](https://arxiv.com), a method for unsupervised representation learning of time series data. The DynaCL method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
 
 ![DynaCL Framework](./images/dynacl.png?raw=true "Title")
 
@@ -31,7 +31,7 @@ To use **DynaCL** and the baseline models, you will need access to relevant time
 
 - [**ECG**](https://physionet.org/content/afdb/1.0.0/): We use the MIT-BIH Atrial Fibrillation dataset, which includes 25 long-term electrocardiogram (ECG) recordings of human subjects with atrial fibrillation, each with a duration of 10 hours.
 
-Make sure to place your dataset in the appropriate directory (e.g., `data/dataset_name`) as specified in the configuration files.
+Make sure to place the dataset in the appropriate directory (e.g., `data/dataset_name`) as specified in the configuration files.
 
 
 ## Usage
@@ -76,6 +76,7 @@ This repository provides reimplementations of several baselines for time-series 
 - [**InfoTS**](https://github.com/chengw07/InfoTS): Time Series Contrastive Learning with Information-Aware Augmentations.
 - [**CPC**](https://github.com/davidtellez/contrastive-predictive-coding): Contrastive Predictive coding for unsupervised learning of representations.
 - [**TNC**](https://github.com/sanatonek/TNC_representation_learning): Time-series representation through neighborhood contrasting.
+- [**SelfPAB**](https://github.com/ntnu-ai-lab/SelfPAB): Self-supervised learning with randomized cross-sensor masked reconstruction for human activity recognition.
 
 Please check out the original repositories for more details.
 
