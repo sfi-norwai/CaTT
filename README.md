@@ -22,13 +22,14 @@ This repository contains the implementation of [**DynaCL**](https://arxiv.com), 
 
 ## Data
 
+
 To use **DynaCL** and the baseline models, you will need access to relevant time-series datasets. The following datasets are commonly used in this repository:
 
-- **HARTH**: This is a human activity recognition (HAR) dataset that contains recordings from 22 participants, each wearing two 3-axial Axivity AX3 accelerometers for approximately 2 hours in a free-living setting at a sampling rate of 50Hz.
+- [**HARTH**](https://archive.ics.uci.edu/dataset/779/harth): This is a human activity recognition (HAR) dataset that contains recordings from 22 participants, each wearing two 3-axial Axivity AX3 accelerometers for approximately 2 hours in a free-living setting at a sampling rate of 50Hz.
 
-- **SleepEEG**: This dataset contains 153 whole-night electroencephalography (EEG) sleep recordings from 82 healthy subjects, sampled at 100 Hz.
+- [**SleepEEG**](https://www.physionet.org/content/sleep-edfx/1.0.0/): This dataset contains 153 whole-night electroencephalography (EEG) sleep recordings from 82 healthy subjects, sampled at 100 Hz.
 
-- **ECG**: We use the MIT-BIH Atrial Fibrillation dataset, which includes 25 long-term electrocardiogram (ECG) recordings of human subjects with atrial fibrillation, each with a duration of 10 hours.
+- [**ECG**](https://physionet.org/content/afdb/1.0.0/): We use the MIT-BIH Atrial Fibrillation dataset, which includes 25 long-term electrocardiogram (ECG) recordings of human subjects with atrial fibrillation, each with a duration of 10 hours.
 
 Make sure to place your dataset in the appropriate directory (e.g., `data/dataset_name`) as specified in the configuration files.
 
@@ -60,7 +61,7 @@ python models/cost.py -p configs/sleepconfig.yml -d data/sleepeeg -s 42
 ```
 ## Visualizations
 
-Figure \ref{fig:sleepfeaures} shows a t-SNE plot of the learned representation from all baselines on all three datasets.
+The figure below shows a t-SNE plot of the learned representation from all baselines on all three datasets.
 
 ![t-SNE Visualization](./images/tsne.png?raw=true "Title")
 
@@ -70,10 +71,10 @@ Figure \ref{fig:sleepfeaures} shows a t-SNE plot of the learned representation f
 
 This repository provides reimplementations of several baselines for time-series representation learning using some parts of the codes provided by the following  works:
 
-- [**TS2Vec**](https://github.com/zhihanyue/ts2vec): Time-series representation learning via temporal and contextual contrasting.
-- [**CoST**](https://github.com/salesforce/CoST): Contrastive learning of time-series.
-- [**InfoTS**](https://github.com/chengw07/InfoTS): Self-supervised learning for time-series with information-theoretic principles.
-- [**CPC**](https://github.com/davidtellez/contrastive-predictive-coding): Predictive coding for unsupervised learning of representations.
+- [**TS2Vec**](https://github.com/zhihanyue/ts2vec): Towards Universal Representation of Time Series.
+- [**CoST**](https://github.com/salesforce/CoST): Contrastive Learning of Disentangled Seasonal-Trend Representations for Time Series Forecasting.
+- [**InfoTS**](https://github.com/chengw07/InfoTS): Time Series Contrastive Learning with Information-Aware Augmentations.
+- [**CPC**](https://github.com/davidtellez/contrastive-predictive-coding): Contrastive Predictive coding for unsupervised learning of representations.
 - [**TNC**](https://github.com/sanatonek/TNC_representation_learning): Time-series representation through neighborhood contrasting.
 
 Please check out the original repositories for more details.
