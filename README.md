@@ -67,7 +67,7 @@ For downstream linear evaluation of the pretrained models, first place the pretr
 
 ```bash
 python baselines/linear_evaluation.py -p configs/config.yml -d data/dataset_name
- -a [ baseline, baseline2, ... ] -e num_epochs -s [ seed1, seed2, seed3, ... ]
+                        -a [baseline, baseline2, ...] -e num_epochs -s [seed1, seed2, seed3, ...]
 ```
 
 ### Example
@@ -75,7 +75,7 @@ For example, to evaluate DynaCL and CoST model on the SleepEEG dataset with a se
 
 ```bash
 python baselines/linear_evaluation.py -p configs/sleepconfig.yml -d data/sleepeeg
- -a [ 'dynacl','cost' ] -e 50 -s [ 42, 53, 64 ]
+                         -a ['dynacl','cost'] -e 50 -s [42, 53, 64]
 ```
 
 ## Visualizations
