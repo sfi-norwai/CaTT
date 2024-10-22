@@ -1,4 +1,4 @@
-# DynaCL: Dynamic Contrastive Learning for Time-Series Representation
+# DynaCL: Dynamic Contrastive Learning for Time Series Representation
 
 This repository contains the Pytorch implementation of [**DynaCL**](https://arxiv.com), a method for unsupervised representation learning of time series data. The DynaCL method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
 
@@ -36,12 +36,12 @@ Make sure to place the dataset in the appropriate directory (e.g., `data/dataset
 
 ## Usage
 
-### Running DynaCL
+### Unsupervised pretraining of DynaCL
 
-To run the DynaCL model, use the following command:
+To pretrain the DynaCL model, use the following command:
 
 ```bash
-python models/dynacl.py -p configs/dynacl_config.yml -d data/dataset_name -s seed
+python baselines/dynacl.py -p configs/config.yml -d data/dataset_name -s seed
 ```
 
 - `-p` specifies the configuration file.
@@ -49,16 +49,33 @@ python models/dynacl.py -p configs/dynacl_config.yml -d data/dataset_name -s see
 - `-s` sets the random seed for reproducibility.
 
 ### Example
+For example, to pretrain DynaCL model on the SleepEEG dataset with a seed of 42 run:
 ```bash
-python models/dynacl.py -p configs/sleepconfig.yml -d data/sleepeeg -s 42
+python baselines/dynacl.py -p configs/sleepconfig.yml -d data/sleepeeg -s 42
 ```
 
 ### Running Baseline Models
-To compare DynaCL against the baseline models, you can use similar commands. For example, to run the CoST baseline:
+To compare DynaCL against the baseline models, you can use similar commands to pretrain the baselines. For example, to pretrain the CoST baseline on SleepEEG:
 
 ```bash
-python models/cost.py -p configs/sleepconfig.yml -d data/sleepeeg -s 42
+python baselines/cost.py -p configs/sleepconfig.yml -d data/sleepeeg -s 42
 ```
+
+## Linear Evaluation with Frozen Backbone
+
+For downstream linear evaluation of the pretrained models, first place the pretrain models in the folder `model/model_name`. Use the following command to finetune and evaluation a linear classifier on a frozen backbone.
+
+```bash
+python baselines/linear_evaluation.py -p configs/config.yml -d data/dataset_name -a [ baseline, baseline2, ... ] -e num_epochs -s [ seed1, seed2, seed3, ... ]
+```
+
+### Example
+For example, to evaluate DynaCL and CoST model on the SleepEEG dataset with a seed of 42, 53, 64 for 50 epochs:
+
+```bash
+python baselines/linear_evaluation.py -p configs/sleepconfig.yml -d data/sleepeeg -a [ 'dynacl','cost' ] -e 50 -s [ 42, 53, 64 ]
+```
+
 ## Visualizations
 
 The figure below shows a t-SNE plot of the learned representation from all baselines on all three datasets.
