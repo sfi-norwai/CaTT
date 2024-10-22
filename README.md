@@ -66,14 +66,16 @@ python baselines/cost.py -p configs/sleepconfig.yml -d data/sleepeeg -s 42
 For downstream linear evaluation of the pretrained models, first place the pretrain models in the folder `model/model_name`. Use the following command to finetune and evaluation a linear classifier on a frozen backbone.
 
 ```bash
-python baselines/linear_evaluation.py -p configs/config.yml -d data/dataset_name -a [ baseline, baseline2, ... ] -e num_epochs -s [ seed1, seed2, seed3, ... ]
+python baselines/linear_evaluation.py -p configs/config.yml -d data/dataset_name
+ -a [ baseline, baseline2, ... ] -e num_epochs -s [ seed1, seed2, seed3, ... ]
 ```
 
 ### Example
 For example, to evaluate DynaCL and CoST model on the SleepEEG dataset with a seed of 42, 53, 64 for 50 epochs:
 
 ```bash
-python baselines/linear_evaluation.py -p configs/sleepconfig.yml -d data/sleepeeg -a [ 'dynacl','cost' ] -e 50 -s [ 42, 53, 64 ]
+python baselines/linear_evaluation.py -p configs/sleepconfig.yml -d data/sleepeeg
+ -a [ 'dynacl','cost' ] -e 50 -s [ 42, 53, 64 ]
 ```
 
 ## Visualizations
