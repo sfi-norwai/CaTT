@@ -105,9 +105,12 @@ Please check out the original repositories for more details.
 If you use **DynaCL** in your research, please consider citing it as follows:
 
 ```bibtex
-@article{dynacl2024,
-  title={DynaCL: Dynamic Contrastive Learning for Time-Series Representation},
-  author={Your Name, et al.},
-  journal={Conference/Journal Name},
-  year={2024}
+@misc{dynacl2024,
+      title={Dynamic Contrastive Learning for Time Series Representation}, 
+      author={Abdul-Kazeem Shamba and Kerstin Bach and Gavin Taylor},
+      year={2024},
+      eprint={2410.15416},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.15416}, 
 }
