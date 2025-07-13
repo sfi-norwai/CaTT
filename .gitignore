@@ -11,4 +11,4 @@ __pycache__/
 # Virtual environment
 venv/
 .env/
-.params/norm_params/
+params/norm_params/HUNT4/normalization_params_STFT_feats156_seqlen599/
