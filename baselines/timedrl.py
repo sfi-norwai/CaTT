@@ -1,17 +1,16 @@
+from src.models.timedrlmodel import *
 import torch
+from models.contrastive import LS_HATCL_LOSS, HATCL_LOSS
 from tqdm import tqdm
-from src.models.ts2vecencoder import *
-import src.config, src.utils, src.models, src.hunt_data
-from src.losses.contrastive import global_infoNCE, local_infoNCE
-from src.models.infotsaugmentation import AutoAUG
 from src.models.attention_model import *
-from src.models.ts2vecencoder import *
 from pytorch_lightning.loggers import WandbLogger
 import wandb
-from models import TSEncoder
+from src.losses.soft_losses import *
+from src.layers.Embed import Patching
 
-class InfoTS:
-    '''The InfoTS model'''
+
+class TimeDRL:
+    '''The TimeDRL model'''
     
     def __init__(
         self,
@@ -20,7 +19,7 @@ class InfoTS:
         device='cuda',
     ):
         '''
-          Initialize a InfoTS model.
+          Initialize a TimeDRL model.
 
         '''
         
@@ -29,11 +28,18 @@ class InfoTS:
         super().__init__()
         
         self.device = device
-        self.net = TSEncoder(input_dims=args['feature_dim'], output_dims=args['out_features']).to(self.device)
+        self.net = TimeDRL_Encoder(input_size=args['feature_dim'], output_size=args['out_features']).to(self.device)
+
+        # self.net = TSEncoder(input_dims=args['feature_dim'], output_dims=args['out_features']).to(self.device)
         self.n_iters = 0
+
+        
+        
+
+       
     
     def fit(self, train_dataset, ds_name, verbose=False):
-        ''' Training the InfoTS model.
+        ''' Training the TimeDRL model.
         
         Args:
             train_data (numpy.ndarray): The training data. It should have a shape of (n_instance, n_timestamps, n_features). All missing data should be set to NaN.
@@ -56,7 +62,7 @@ class InfoTS:
         # Wandb setup
         if self.config.WANDB:    
             proj_name = 'Dynamic_CL' + ds_name + str(self.config.SEED)
-            run_name = 'InfoTS'
+            run_name = 'TimeDRL'
 
             wandb_logger = WandbLogger(project=proj_name)
             
@@ -81,6 +87,16 @@ class InfoTS:
             wandb.run.save()
         
         # Define loss function and optimizer
+
+        if self.args['loss'] == 'HATCL_LOSS':
+            cl_loss = HATCL_LOSS(temperature=self.args['temperature'])
+
+        elif self.args['loss'] == 'LS_HATCL_LOSS':
+            cl_loss = LS_HATCL_LOSS(temperature=self.args['temperature'])
+
+        else:
+            raise ValueError(f"Unsupported loss function: {self.args['loss']}")
+
         self.args['lr'] = float(self.args['lr'])
 
         if self.args['optimizer'] == 'Adam':
@@ -100,25 +116,27 @@ class InfoTS:
 
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=self.config.PATIENCE)
         
-    
-        
-        max_train_length = 500
-        aug = AutoAUG(aug_p1=0.2,aug_p2=0.2,used_augs=None, device=self.device)
-        t0 = 2.0
-        t1 = 0.1
+        patch_len = 10
+        stride = 1
+        enable_channel_independence = False
+
+        patching = Patching(
+                patch_len, stride, enable_channel_independence
+            )
 
         n_iters = self.args['iterations']
         pbar = tqdm(total=n_iters, desc="Training")
         epoch = 0
 
         while True:
+
             # Training phase
             self.net.train()  # Set the model to training mode
             train_running_loss = 0.0
             n_epoch_iters = 0
 
             for x, _ in train_loader:
-
+                x = x.float() 
                 interrupted = False
                 if n_iters is not None and self.n_iters >= n_iters:
                     interrupted = True
@@ -126,26 +144,42 @@ class InfoTS:
                 
                 x = x.to(self.device)
                
-                if max_train_length is not None and x.size(1) > max_train_length:
-                    window_offset = np.random.randint(x.size(1) - max_train_length + 1)
-                    x = x[:, window_offset : window_offset + max_train_length]
-                x = x.to(self.device) 
+                (
+                        _,
+                        _,
+                        x_pred_1,
+                        x_pred_2,
+                        i_1,
+                        i_2,
+                        i_1_pred,
+                        i_2_pred,
+                    ) = self.net(x)
 
-                
-                if n_iters==-1:
-                    t =1.0
-                else:
-                    t = float(t0 * np.power(t1 / t0, (n_iters+1) / n_iters))
+                predictive_loss = (
+                    nn.MSELoss()(x_pred_1, patching(x))
+                    + nn.MSELoss()(x_pred_2, patching(x))
+                ) / 2
 
-                a1,a2 = aug((x,t))
+            
+                if not False:
+                    i_1 = i_1.detach()
+                    i_2 = i_2.detach()
 
-                out1 = self.net(a1.to(self.device))
-                out2 = self.net(a2.to(self.device))
+                cos_sim = nn.CosineSimilarity(dim=1)
+                contrastive_loss = (
+                    -(
+                        cos_sim(i_1, i_2_pred).mean()
+                        + cos_sim(i_2, i_1_pred).mean()
+                    )
+                    * 0.5
+                )
 
-                # Calculate the loss
-                loss = global_infoNCE(
-                    out1, out2) + local_infoNCE(out1, out2, k=8)
-                
+                loss = (
+                    predictive_loss
+                    + 0.1 * contrastive_loss
+                )
+               
+            
                 # Backward pass and optimization
                 optimizer.zero_grad()
                 loss.backward()
@@ -176,10 +210,9 @@ class InfoTS:
         except:
             return 0
     
-    def encode(self, x, mask=None):
-
+    def encode(self, x):
         self.net.eval()
-        out = self.net(x.to(self.device, non_blocking=True), mask)
+        out = self.net.encoder(x.to(self.device))
 
         return out
 
@@ -190,7 +223,7 @@ class InfoTS:
         Args:
             fn (str): filename.
         '''
-        torch.save(self.net.state_dict(), fn)
+        torch.save(self.net.encoder.state_dict(), fn)
     
     def load(self, fn):
         ''' Load the model from a file.
@@ -199,4 +232,4 @@ class InfoTS:
             fn (str): filename.
         '''
         state_dict = torch.load(fn, map_location=self.device)
-        self.net.load_state_dict(state_dict)
+        self.net.encoder.load_state_dict(state_dict)

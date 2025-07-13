@@ -24,8 +24,10 @@ CLASSES:
 
 # --- Information about data
 # Path to training dataset 
-TRAIN_DATA: /ssd4/aleksejl/HUNT4_accelerometer_snippets/
-class_count: {0: 1577, 1: 972, 2: 459, 3: 1467}
+class_count: {0: 1000, 1: 162, 2: 77, 3: 800}
+class_count_semi: [0.01, 0.05, 0.1]
+
+
 class_dict: {0: "AFIB", 1: "AFL", 2: "J", 3: "N"}
 
 # Amount of training data used for validation (between 0 and 1)
@@ -37,8 +39,7 @@ SEED: 77
 
 NUM_WORKERS: 4  # Num of workers for data loading
 NUM_GPUS: [0]  # How many/which GPUs to use
-WANDB: True
-WANDB_KEY: #Enter key here
+WANDB: False
 
 seeds: [42, 53, 64, 75]
 baselines: [vanilla_cl, double_cl, margin_cl, ts2vec, infoTS, triplet, tnc, cpc]
@@ -51,10 +52,10 @@ DATASET: ECG
 DATASET_ARGS:
   #STFT FOR ECG
   class_to_exclude: [7]
-  n_fft: [250]
-  hop_length: [125]
-  win_length: [250]
-  seq_length: [500]
+  n_fft: [1500]
+  hop_length: [750]
+  win_length: [1500]
+  seq_length: [200]
   num_labels: [4]
 
 # -- Model 
@@ -63,22 +64,24 @@ ALGORITHM: DownstreamMLP
 # Arguments for classifier
 # (all given as lists in case to perform a GridSearch)
 ALGORITHM_ARGS:
-  epochs: [500]
+  epochs: [100]
+  iterations: [200]
+  linear_epochs: [10]
   margin: [100]
-  feature_dim: [252]
-  out_features: [32]
+  feature_dim: [1502]
+  out_features: [320]
   temperature: [0.5]
   mask_fraction: [0.3]
   margin_thresh: [0.4]
   mse_lambda: [1]
   batch_size: [8]
   tnc_window: [20]
-  sequence_sample: [119]
+  sequence_sample: [200]
 
   
 
   # MARGIN_LOSS, LS_MARGIN_LOSS, LS_HATCL_LOSS, HATCL_LOSS
-  loss: [LS_HATCL_LOSS]
+  loss: [HATCL_LOSS]
   mloss: [LS_MARGIN_LOSS]
   optimizer: [AdamW]
   weight_decay: [0.0]

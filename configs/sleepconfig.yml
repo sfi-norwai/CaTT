@@ -24,22 +24,22 @@ CLASSES:
 
 # --- Information about data
 # Path to training dataset 
-TRAIN_DATA: /ssd4/aleksejl/HUNT4_accelerometer_snippets/
 class_count: {0: 1000, 1: 1000, 2: 1000, 3: 1000, 4: 1000}
+class_count_semi: [0.01, 0.05, 0.1]
+
 class_dict: {0: "W", 1: "N1", 2: "N2", 3: "N3", 4: "REM"}
 # Amount of training data used for validation (between 0 and 1)
 VALID_SPLIT: 0.2
 display_batch: 12000
 # Randomly selected test subjects (Not used during LOSO!)
 TEST_SUBJECTS: [S027.csv,S023.csv,S008.csv,S019.csv,S006.csv,S024.csv, S010.csv,  S014.csv,  S017.csv,  S020.csv]
-SEED: 77
+SEED: 42
 
 NUM_WORKERS: 4  # Num of workers for data loading
 NUM_GPUS: [0]  # How many/which GPUs to use
-WANDB: True
-WANDB_KEY: #Enter key here
+WANDB: False
 
-seeds: [42, 53, 64, 75, 86]
+seeds: [42]
 
 baselines: [vanilla_cl, double_cl, margin_cl, ts2vec, infoTS, triplet, tnc, cpc, monoselfPAB, reconstruction]
 
@@ -49,13 +49,13 @@ output_dir: output/sleepeeg/
 
 DATASET: SLEEPEEG
 DATASET_ARGS:
-  #STFT FOR ECG
+  #STFT FOR SLEEPEEG
   class_to_exclude: [3]
-  n_fft: [250]
-  hop_length: [125]
-  win_length: [250]
-  seq_length: [300]
-  num_labels: [4]
+  n_fft: [178]
+  hop_length: [178]
+  win_length: [178]
+  seq_length: [200]
+  num_labels: [5]
 
 # -- Model 
 # Which classifier to use 
@@ -63,17 +63,19 @@ ALGORITHM: DownstreamMLP
 # Arguments for classifier
 # (all given as lists in case to perform a GridSearch)
 ALGORITHM_ARGS:
-  epochs: [500]
+  epochs: [100]
+  iterations: [600]
+  linear_epochs: [10]
   margin: [5]
-  feature_dim: [178]
-  out_features: [32]
-  temperature: [0.5]
+  feature_dim: [90]
+  out_features: [320]
+  temperature: [0.1]
   mask_fraction: [0.3]
   margin_thresh: [0.4]
   mse_lambda: [0.4]
   batch_size: [8]
   tnc_window: [20]
-  sequence_sample: [300]
+  sequence_sample: [200]
 
   
 

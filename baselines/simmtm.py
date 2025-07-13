@@ -1,17 +1,15 @@
+
+from src.losses.contrastive import SimMTMLoss
 import torch
+from models.contrastive import LS_HATCL_LOSS, HATCL_LOSS
 from tqdm import tqdm
-from src.models.ts2vecencoder import *
-import src.config, src.utils, src.models, src.hunt_data
-from src.losses.contrastive import global_infoNCE, local_infoNCE
-from src.models.infotsaugmentation import AutoAUG
 from src.models.attention_model import *
-from src.models.ts2vecencoder import *
 from pytorch_lightning.loggers import WandbLogger
 import wandb
 from models import TSEncoder
 
-class InfoTS:
-    '''The InfoTS model'''
+class SimMTM:
+    '''The SimMTM model'''
     
     def __init__(
         self,
@@ -20,7 +18,7 @@ class InfoTS:
         device='cuda',
     ):
         '''
-          Initialize a InfoTS model.
+          Initialize a SimMTM model.
 
         '''
         
@@ -29,11 +27,18 @@ class InfoTS:
         super().__init__()
         
         self.device = device
-        self.net = TSEncoder(input_dims=args['feature_dim'], output_dims=args['out_features']).to(self.device)
+        self.net = FeatureProjector(input_size=args['feature_dim'], output_size=args['out_features']).to(self.device)
+
+        # self.net = TSEncoder(input_dims=args['feature_dim'], output_dims=args['out_features']).to(self.device)
         self.n_iters = 0
+
+        
+        
+
+       
     
     def fit(self, train_dataset, ds_name, verbose=False):
-        ''' Training the InfoTS model.
+        ''' Training the SimMTM model.
         
         Args:
             train_data (numpy.ndarray): The training data. It should have a shape of (n_instance, n_timestamps, n_features). All missing data should be set to NaN.
@@ -56,7 +61,7 @@ class InfoTS:
         # Wandb setup
         if self.config.WANDB:    
             proj_name = 'Dynamic_CL' + ds_name + str(self.config.SEED)
-            run_name = 'InfoTS'
+            run_name = 'SimMTM'
 
             wandb_logger = WandbLogger(project=proj_name)
             
@@ -81,6 +86,9 @@ class InfoTS:
             wandb.run.save()
         
         # Define loss function and optimizer
+
+        cl_loss = SimMTMLoss(self.device, temperature=self.args['temperature'])
+
         self.args['lr'] = float(self.args['lr'])
 
         if self.args['optimizer'] == 'Adam':
@@ -99,13 +107,6 @@ class InfoTS:
             optimizer = torch.optim.Adam(self.net.parameters(), lr=self.args['lr'])  # Example optimizer
 
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=self.config.PATIENCE)
-        
-    
-        
-        max_train_length = 500
-        aug = AutoAUG(aug_p1=0.2,aug_p2=0.2,used_augs=None, device=self.device)
-        t0 = 2.0
-        t1 = 0.1
 
         n_iters = self.args['iterations']
         pbar = tqdm(total=n_iters, desc="Training")
@@ -126,25 +127,12 @@ class InfoTS:
                 
                 x = x.to(self.device)
                
-                if max_train_length is not None and x.size(1) > max_train_length:
-                    window_offset = np.random.randint(x.size(1) - max_train_length + 1)
-                    x = x[:, window_offset : window_offset + max_train_length]
-                x = x.to(self.device) 
+                out = self.net(x)
 
+                features = out.reshape(-1, out.size(-1))
                 
-                if n_iters==-1:
-                    t =1.0
-                else:
-                    t = float(t0 * np.power(t1 / t0, (n_iters+1) / n_iters))
-
-                a1,a2 = aug((x,t))
-
-                out1 = self.net(a1.to(self.device))
-                out2 = self.net(a2.to(self.device))
-
-                # Calculate the loss
-                loss = global_infoNCE(
-                    out1, out2) + local_infoNCE(out1, out2, k=8)
+                 # Compute training loss
+                loss, _, _ = cl_loss(features, x)
                 
                 # Backward pass and optimization
                 optimizer.zero_grad()
@@ -176,10 +164,9 @@ class InfoTS:
         except:
             return 0
     
-    def encode(self, x, mask=None):
-
+    def encode(self, x):
         self.net.eval()
-        out = self.net(x.to(self.device, non_blocking=True), mask)
+        out = self.net(x.to(self.device))
 
         return out
 
@@ -200,3 +187,9 @@ class InfoTS:
         '''
         state_dict = torch.load(fn, map_location=self.device)
         self.net.load_state_dict(state_dict)
+
+
+
+
+
+

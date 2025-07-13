@@ -24,8 +24,10 @@ CLASSES:
 
 # --- Information about data
 # Path to training dataset 
-TRAIN_DATA: /ssd4/aleksejl/HUNT4_accelerometer_snippets/
 class_count: {0: 1000, 1: 1000, 2: 1000, 3: 1000, 4: 1000, 5: 1000, 6: 1000, 7: 1000, 8: 1000, 9: 1000, 10: 1000, 11: 500}
+class_count_semi: [0.01, 0.05, 0.1]
+
+
 class_dict: {
     0: 'walking',
     1: 'running',
@@ -41,7 +43,7 @@ class_dict: {
     11: 'cycling (stand, inactive)'
 }
 # Amount of training data used for validation (between 0 and 1)
-VALID_SPLIT: 0.2
+VALID_SPLIT: 0.5
 display_batch: 12000
 # Randomly selected test subjects (Not used during LOSO!)
 TEST_SUBJECTS: [S027.csv,S023.csv,S008.csv,S019.csv,S006.csv,S024.csv, S010.csv,  S014.csv,  S017.csv,  S020.csv]
@@ -49,9 +51,7 @@ SEED: 77
 
 NUM_WORKERS: 4  # Num of workers for data loading
 NUM_GPUS: [0]  # How many/which GPUs to use
-WANDB: True
-WANDB_KEY: #Enter key here
-
+WANDB: False
 
 seeds: [42, 53, 64, 75, 86]
 baselines: [vanilla_cl, double_cl, margin_cl, ts2vec, infoTS, triplet, tnc, cpc, monoselfPAB, reconstruction]
@@ -79,11 +79,13 @@ ALGORITHM: DownstreamMLP
 # Arguments for classifier
 # (all given as lists in case to perform a GridSearch)
 ALGORITHM_ARGS:
-  epochs: [500]
+  epochs: [100]
+  iterations: [600]
+  linear_epochs: [10]
   margin: [5]
   feature_dim: [156]
-  out_features: [32]
-  temperature: [0.5]
+  out_features: [320]
+  temperature: [0.05]
   mask_fraction: [1e-5]
   margin_thresh: [0.4]
   mse_lambda: [1e-30]

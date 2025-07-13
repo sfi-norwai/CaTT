@@ -1,29 +1,11 @@
-# DynaCL: Dynamic Contrastive Learning for Time Series Representation
+# CaTT: Learning Time Series Representation from Temporal Consistency
 
-This repository contains the Pytorch implementation of [**DynaCL**](https://arxiv.org/abs/2410.15416), a method for unsupervised representation learning of time series data. The DynaCL method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
-
-![DynaCL Framework](./images/dynacl.png?raw=true "Title")
-
-
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/sfi-norwai/contrastive-learning.git
-    cd contrastive-learning
-    ```
-
-2. Install the required dependencies:
-    ```bash
-    conda create -n dynacl-env python=3.11
-    conda activate dynacl-env
-    pip install -r requirements.txt
-    ```
+This repository contains the Pytorch implementation of CaTT, a method for unsupervised representation learning of time series data. The CaTT method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
 
 ## Data
 
 
-To use **DynaCL** and the baseline models, you will need access to relevant time-series datasets. The following datasets are commonly used in this repository:
+To use **CaTT** and the baseline models, you will need access to relevant time-series datasets. The following datasets are used in this repository:
 
 - [**HARTH**](https://archive.ics.uci.edu/dataset/779/harth): This is a human activity recognition (HAR) dataset that contains recordings from 22 participants, each wearing two 3-axial Axivity AX3 accelerometers for approximately 2 hours in a free-living setting at a sampling rate of 50Hz.
 
@@ -31,51 +13,43 @@ To use **DynaCL** and the baseline models, you will need access to relevant time
 
 - [**ECG**](https://physionet.org/content/afdb/1.0.0/): We use the MIT-BIH Atrial Fibrillation dataset, which includes 25 long-term electrocardiogram (ECG) recordings of human subjects with atrial fibrillation, each with a duration of 10 hours.
 
-Make sure to place the dataset in the appropriate directory (e.g., `data/dataset_name`) as specified in the configuration files.
+Make sure to place the dataset in the appropriate directory (e.g., `datasets/sleepeeg`) as specified in the configuration files.
+
+For the forecasting tasks use the following datasets.
+
+- [**3 ETT**](https://github.com/zhouhaoyi/ETDataset): This datasets should be placed at datasets/ETTh1.csv, datasets/ETTh2.csv and datasets/ETTm1.csv.
+
+- [**Weather**](https://github.com/zhouhaoyi/Informer2020): This dataset link is from the Informer repository and should be places in datasets/weather.csv.
 
 
 ## Usage
 
-### Unsupervised pretraining of DynaCL
+### Unsupervised pretraining of CaTT
 
-To pretrain the DynaCL model, use the following command:
+To pretrain the CaTT model for classification, use the following command:
 
 ```bash
-python baselines/dynacl.py -p configs/config.yml -d data/dataset_name -s seed
-```
+python pretrain.py <model> <dataset> -p <configs/harthconfig.yml> -s < > --evaluate < >
 
+```
+- `model` specifies the model to train.
+- `dataset` specifies the dataset directory.
 - `-p` specifies the configuration file.
-- `-d` specifies the dataset directory.
-- `-s` sets the random seed for reproducibility.
+- `-s` sets the seed for reproducibility.
+- `--evaluate` define the task to perform.
 
 ### Example
-For example, to pretrain DynaCL model on the SleepEEG dataset with a seed of 42 run:
+For example, to pretrain CaTT model on the harth dataset with a seed of 1 and evaluate of supervised classification, run:
 ```bash
-python baselines/dynacl.py -p configs/sleepconfig.yml -d data/sleepeeg -s 42
+python pretrain.py CaTT harth -p configs/harthconfig.yml -s 1 --evaluate supervised
 ```
+Check the scripts/ directory for complete list of training scripts for all tasks in the paper as well as the different seeds used for reproducibility.
 
 ### Running Baseline Models
-To compare DynaCL against the baseline models, you can use similar commands to pretrain the baselines. For example, to pretrain the CoST baseline on SleepEEG:
+To compare CaTT against the baseline models, you can use similar commands to pretrain the baselines. For example, to pretrain the CoST baseline on SleepEEG:
 
 ```bash
-python baselines/cost.py -p configs/sleepconfig.yml -d data/sleepeeg -s 42
-```
-
-## Linear Evaluation with Frozen Backbone
-
-For downstream linear evaluation of the pretrained models, first place the pretrain models in the folder `model/model_name`. Use the following command to finetune and evaluation a linear classifier on a frozen backbone.
-
-```bash
-python baselines/linear_evaluation.py -p configs/config.yml -d data/dataset_name
-            -a [baseline, baseline2, ...] -e num_epochs -s [seed1, seed2, seed3, ...]
-```
-
-### Example
-For example, to evaluate DynaCL and CoST model on the SleepEEG dataset with a seed of 42, 53, 64 for 50 epochs:
-
-```bash
-python baselines/linear_evaluation.py -p configs/sleepconfig.yml -d data/sleepeeg
-            -a ['dynacl','cost'] -e 50 -s [42, 53, 64]
+python pretrain.py CoST sleepeeg -p configs/sleepconfig.yml -s 1 --evaluate supervised
 ```
 
 ## Visualizations
@@ -85,32 +59,22 @@ The figure below shows a t-SNE plot of the learned representation from all basel
 ![t-SNE Visualization](./images/tsne.png?raw=true "Title")
 
 
-
 ## Acknowledgements
 
 This repository provides reimplementations of several baselines for time-series representation learning using some parts of the codes provided by the following  works:
 
+- [**MF-CLR**](https://github.com/duanjufang/MF-CLR): Multi-Frequency Contrastive Learning Representation for Time Series.
+
 - [**TS2Vec**](https://github.com/zhihanyue/ts2vec): Towards Universal Representation of Time Series.
+
+- [**Soft**](https://github.com/seunghan96/softclt?tab=readme-ov-file): Soft Contrastive Learning for Time Series.
+- [**TimeDRL**](https://github.com/blacksnail789521/TimeDRL): Disentangled Representation Learning for Multivariate Time-Series.
+
+- [**SimMTM**](https://github.com/thuml/SimMTM): A Simple Pre-Training Framework for Masked Time-Series Modeling.
+
 - [**CoST**](https://github.com/salesforce/CoST): Contrastive Learning of Disentangled Seasonal-Trend Representations for Time Series Forecasting.
 - [**InfoTS**](https://github.com/chengw07/InfoTS): Time Series Contrastive Learning with Information-Aware Augmentations.
-- [**CPC**](https://github.com/davidtellez/contrastive-predictive-coding): Representation Learning with Contrastive Predictive Coding.
 - [**TNC**](https://github.com/sanatonek/TNC_representation_learning): Unsupervised Representation Learning for TimeSeries with Temporal Neighborhood Coding.
 - [**SelfPAB**](https://github.com/ntnu-ai-lab/SelfPAB): Self-supervised learning with randomized cross-sensor masked reconstruction for human activity recognition.
 
 Please check out the original repositories for more details.
-
-
-## Citations
-
-If you use **DynaCL** in your research, please consider citing it as follows:
-
-```bibtex
-@misc{dynacl2024,
-      title={Dynamic Contrastive Learning for Time Series Representation}, 
-      author={Abdul-Kazeem Shamba and Kerstin Bach and Gavin Taylor},
-      year={2024},
-      eprint={2410.15416},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2410.15416}, 
-}
