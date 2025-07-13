@@ -2,9 +2,9 @@
 <h2 align="center">Contrast All The Time : Learning Time Series Representation from Temporal Consistency</h2>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/github/license/sfi-norwai/contrastive-learning.git">
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/sfi-norwai/contrastive-learning.git">
-  <img alt="Stars" src="https://img.shields.io/github/stars/sfi-norwai/contrastive-learning.git?style=social">
+  <img alt="License" src="https://img.shields.io/github/license/sfi-norwai/contrastive-learning">
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/sfi-norwai/contrastive-learning">
+  <img alt="Stars" src="https://img.shields.io/github/stars/sfi-norwai/contrastive-learning?style=social">
   <a href="https://arxiv.org/abs/2410.15416">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2410.15416-b31b1b.svg">
   </a>
