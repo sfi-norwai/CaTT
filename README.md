@@ -37,6 +37,9 @@ For the forecasting tasks use the following datasets.
 
 - [**Weather**](https://github.com/zhouhaoyi/Informer2020): This dataset link is from the Informer repository and should be places in datasets/weather.csv.
 
+Anomaly detection code and datasets are adapted from the [TSB-AD repository](https://github.com/TheDatumOrg/TSB-AD).
+
+
 
 ## Usage
 
@@ -92,6 +95,7 @@ This repository provides reimplementations of several baselines for time-series 
 - [**InfoTS**](https://github.com/chengw07/InfoTS): Time Series Contrastive Learning with Information-Aware Augmentations.
 - [**TNC**](https://github.com/sanatonek/TNC_representation_learning): Unsupervised Representation Learning for TimeSeries with Temporal Neighborhood Coding.
 - [**SelfPAB**](https://github.com/ntnu-ai-lab/SelfPAB): Self-supervised learning with randomized cross-sensor masked reconstruction for human activity recognition.
+- [**TSB-AD**](https://github.com/TheDatumOrg/TSB-AD): A Benchmark for Time Series Anomaly Detection.
 
 Please check out the original repositories for more details.
 
