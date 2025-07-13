@@ -1,0 +1,13 @@
+# Ignore macOS system files
+.DS_Store
+
+# Bytecode
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.env/
