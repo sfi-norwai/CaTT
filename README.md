@@ -56,7 +56,7 @@ python pretrain.py CoST sleepeeg -p configs/sleepconfig.yml -s 1 --evaluate supe
 
 The figure below shows a t-SNE plot of the learned representation from all baselines on all three datasets.
 
-![t-SNE Visualization](./images/tsne.png?raw=true "Title")
+![t-SNE Visualization](./images/CaTT_embeddings.png?raw=true "Title")
 
 
 ## Acknowledgements
