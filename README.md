@@ -1,5 +1,5 @@
 <h1 align="center">CaTT</h1>
-<h2 align="center">Contrast All The Time : Learning Time Series Representation from Temporal Consistency</h2>
+<h2 align="center">Contrast All The Time : Learning Time Series Representation from Temporal Consistency (ECAI 2025)</h2>
 
 <p align="center">
   <a href="https://arxiv.org/abs/2410.15416">
