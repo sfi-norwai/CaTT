@@ -10,8 +10,9 @@
   <img alt="Stars" src="https://img.shields.io/github/stars/sfi-norwai/contrastive-learning?style=social">
 </p>
 
-
-
+<p align="center">
+  <strong>🎉 Accepted to <a href="https://ecai2025.eu/">ECAI 2025</a> 🎉</strong>
+</p>
 
 This repository contains the Pytorch implementation of [**CaTT**](https://arxiv.org/abs/2410.15416), a method for unsupervised representation learning of time series data. The CaTT method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
 
