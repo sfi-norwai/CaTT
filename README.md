@@ -1,6 +1,24 @@
-# CaTT: Learning Time Series Representation from Temporal Consistency
+# Contrast All The Time (CaTT): Learning Time Series Representation from Temporal Consistency
 
-This repository contains the Pytorch implementation of CaTT, a method for unsupervised representation learning of time series data. The CaTT method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
+This repository contains the Pytorch implementation of [**CaTT**](https://arxiv.org/abs/2410.15416), a method for unsupervised representation learning of time series data. The CaTT method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
+
+![CaTT Framework](./images/CaTTN.png?raw=true "Title")
+
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/sfi-norwai/contrastive-learning.git
+    cd contrastive-learning
+    ```
+
+2. Install the required dependencies:
+    ```bash
+    conda create -n dynacl-env python=3.11
+    conda activate dynacl-env
+    pip install -r requirements.txt
+    ```
 
 ## Data
 
@@ -78,3 +96,18 @@ This repository provides reimplementations of several baselines for time-series 
 - [**SelfPAB**](https://github.com/ntnu-ai-lab/SelfPAB): Self-supervised learning with randomized cross-sensor masked reconstruction for human activity recognition.
 
 Please check out the original repositories for more details.
+
+## Citations
+
+If you use **CaTT** in your research, please consider citing it as follows:
+
+```bibtex
+@misc{dynacl2024,
+      title={Dynamic Contrastive Learning for Time Series Representation}, 
+      author={Abdul-Kazeem Shamba and Kerstin Bach and Gavin Taylor},
+      year={2024},
+      eprint={2410.15416},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.15416}, 
+}
