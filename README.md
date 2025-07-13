@@ -2,8 +2,6 @@
 
 This repository contains the Pytorch implementation of [**CaTT**](https://arxiv.org/abs/2410.15416), a method for unsupervised representation learning of time series data. The CaTT method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
 
-![CaTT Framework](./images/CaTTN.png?raw=true "Title")
-
 
 ## Installation
 
