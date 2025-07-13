@@ -1,4 +1,5 @@
-# Contrast All The Time (CaTT): Learning Time Series Representation from Temporal Consistency
+<h1 align="center">CaTT</h1>
+<h2 align="center">Contrast All The Time : Learning Time Series Representation from Temporal Consistency</h2>
 
 This repository contains the Pytorch implementation of [**CaTT**](https://arxiv.org/abs/2410.15416), a method for unsupervised representation learning of time series data. The CaTT method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
 
