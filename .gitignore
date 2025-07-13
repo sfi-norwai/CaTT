@@ -11,3 +11,4 @@ __pycache__/
 # Virtual environment
 venv/
 .env/
+.params/norm_params/
