@@ -1,5 +1,5 @@
 <h1 align="center">CaTT</h1>
-<h2 align="center">Contrast All The Time : Learning Time Series Representation from Temporal Consistency</h2>
+<h2 align="center">Contrast All The Time: Learning Time Series Representation from Temporal Consistency</h2>
 
 <p align="center">
   <a href="https://arxiv.org/abs/2410.15416">
@@ -16,21 +16,21 @@
   </a>
 </p>
 
-This repository contains the Pytorch implementation of [**CaTT**](https://arxiv.org/abs/2410.15416), a method for unsupervised representation learning of time series data. The CaTT method demonstrates the ability to learn semantically meaningful representations off the shelf and outperforms previous time series representation learning methods in downstream linear evaluation.
+This repository contains the official Pytorch implementation of the [**CaTT**](https://arxiv.org/abs/2410.15416) paper (ECAI 2025), a new approach to unsupervised contrastive learning for time series, which takes advantage of dynamics between temporally similar moments more efficiently and effectively than existing methods..
 
 
 ## Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/sfi-norwai/contrastive-learning.git
+    git clone https://github.com/sfi-norwai/CaTT.git
     cd contrastive-learning
     ```
 
 2. Install the required dependencies:
     ```bash
-    conda create -n dynacl-env python=3.11
-    conda activate dynacl-env
+    conda create -n catt-env python=3.11
+    conda activate catt-env
     pip install -r requirements.txt
     ```
 
@@ -120,10 +120,10 @@ Please check out the original repositories for more details.
 If you use **CaTT** in your research, please consider citing it as follows:
 
 ```bibtex
-@misc{dynacl2024,
-      title={Dynamic Contrastive Learning for Time Series Representation}, 
+@misc{catt2025,
+      title={Contrast All The Time: Learning Time Series Representation from Temporal Consistency}, 
       author={Abdul-Kazeem Shamba and Kerstin Bach and Gavin Taylor},
-      year={2024},
+      year={2025},
       eprint={2410.15416},
       archivePrefix={arXiv},
       primaryClass={cs.LG},
