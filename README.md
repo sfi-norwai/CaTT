@@ -129,5 +129,3 @@ If you use **CaTT** in your research, please consider citing it as follows:
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2410.15416}, 
 }
-
-![License](https://img.shields.io/github/license/sfi-norwai/CaTT)
