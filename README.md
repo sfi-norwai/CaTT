@@ -16,7 +16,7 @@
   </a>
 </p>
 
-This repository contains the official Pytorch implementation of the [**CaTT**](https://arxiv.org/abs/2410.15416) paper (ECAI 2025), a new approach to unsupervised contrastive learning for time series, which takes advantage of dynamics between temporally similar moments more efficiently and effectively than existing methods..
+This repository contains the official Pytorch implementation of the "Contrast All The Time ([**CaTT**](https://arxiv.org/abs/2410.15416))" paper (ECAI 2025), a new approach to unsupervised contrastive learning for time series, which takes advantage of dynamics between temporally similar moments more efficiently and effectively than existing methods..
 
 
 ## Installation
